@@ -2111,7 +2111,7 @@ String user = "", nom_paciente = "";
         elevado6.setIndentationLeft((float) 393.5);
         elevado6.setSpacingAfter(0);
         
-                        if(EritrocitosRe<4.7){
+        if(EritrocitosRe<=4.7){
         documento.add(elevado6);
         }
              
@@ -2120,7 +2120,7 @@ String user = "", nom_paciente = "";
         elevado6_1.setIndentationLeft((float) 393.5);
         elevado6_1.setSpacingAfter(0);
    
-          if(EritrocitosRe>=4.7 && EritrocitosRe<=5.2){
+        if(EritrocitosRe>4.7 && EritrocitosRe<5.2){
         documento.add(elevado6_1);
         } 
           
@@ -2129,7 +2129,7 @@ String user = "", nom_paciente = "";
         elevado6_2.setIndentationLeft((float) 393.5);
         elevado6_2.setSpacingAfter(0);
    
-          if(EritrocitosRe>5.2){
+          if(EritrocitosRe>=5.2){
         documento.add(elevado6_2);
         } 
          
@@ -2138,7 +2138,7 @@ String user = "", nom_paciente = "";
         copias11.setIndentationLeft(17);
         copias11.setSpacingAfter(-3);
         
-        if(EritrocitosRe<4.7){
+        if(EritrocitosRe<=4.7){
         documento.add(copias11);
         }
              
@@ -2147,7 +2147,7 @@ String user = "", nom_paciente = "";
         copias12.setIndentationLeft(17);
         copias12.setSpacingAfter(-3);
    
-          if(EritrocitosRe>=4.7 && EritrocitosRe<=5.2){
+          if(EritrocitosRe>4.7 && EritrocitosRe<5.2){
         documento.add(copias12);
         } 
           
@@ -2156,7 +2156,7 @@ String user = "", nom_paciente = "";
         copias13.setIndentationLeft(17);
         copias13.setSpacingAfter(-3);
    
-          if(EritrocitosRe>5.2){
+          if(EritrocitosRe>=5.2){
         documento.add(copias13);
         } 
         
@@ -2164,7 +2164,7 @@ String user = "", nom_paciente = "";
         Paragraph copiasR0DD = new  Paragraph (txt_Eritrocitos.getText() , FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
         copiasR0DD.setSpacingBefore((float) -12.5);
         copiasR0DD.setSpacingAfter(-3);
-        if(txt_Eritrocitos.getText().contains(".") && EritrocitosRe>=0 && EritrocitosRe<4.7){
+        if(txt_Eritrocitos.getText().contains(".") && EritrocitosRe>=0 && EritrocitosRe<=4.7){
         copiasR0DD.setIndentationLeft((float) 326);
         documento.add(copiasR0DD);
         } else {
@@ -2177,7 +2177,7 @@ String user = "", nom_paciente = "";
         Paragraph copiasR1D = new  Paragraph (txt_Eritrocitos.getText() , FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         copiasR1D.setSpacingBefore((float) -12.5);
         copiasR1D.setSpacingAfter(-3);
-        if(txt_Eritrocitos.getText().contains(".") && EritrocitosRe>=4.7 && EritrocitosRe<=5.2){
+        if(txt_Eritrocitos.getText().contains(".") && EritrocitosRe>4.7 && EritrocitosRe<5.2){
         copiasR1D.setIndentationLeft((float) 326);
         documento.add(copiasR1D);
         } else {
@@ -2190,7 +2190,7 @@ String user = "", nom_paciente = "";
         Paragraph copiasR2D = new  Paragraph (txt_Eritrocitos.getText() , FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
         copiasR2D.setSpacingBefore((float) -12.5);
         copiasR2D.setSpacingAfter(-3);
-        if(txt_Eritrocitos.getText().contains(".") && EritrocitosRe>5.2 && EritrocitosRe<10){
+        if(txt_Eritrocitos.getText().contains(".") && EritrocitosRe>=5.2 && EritrocitosRe<10){
         copiasR2D.setIndentationLeft((float) 326);
         documento.add(copiasR2D);
         } else {
@@ -2242,7 +2242,7 @@ String user = "", nom_paciente = "";
         copiasM11.setIndentationLeft(373);
         copiasM11.setSpacingAfter(-3);
         
-                if(EritrocitosRe<4.7){
+        if(EritrocitosRe<=4.7){
         documento.add(copiasM11);
         }
              
@@ -2251,7 +2251,7 @@ String user = "", nom_paciente = "";
         copiasM12.setIndentationLeft(373);
         copiasM12.setSpacingAfter(-3);
    
-          if(EritrocitosRe>=4.7 && EritrocitosRe<=5.2){
+        if(EritrocitosRe>4.7 && EritrocitosRe<5.2){
         documento.add(copiasM12);
         } 
           
@@ -2260,7 +2260,7 @@ String user = "", nom_paciente = "";
         copiasM13.setIndentationLeft(373);
         copiasM13.setSpacingAfter(-3);
    
-          if(EritrocitosRe>5.2){
+        if(EritrocitosRe>=5.2){
         documento.add(copiasM13);
         } 
          
@@ -2269,7 +2269,7 @@ String user = "", nom_paciente = "";
         uL.setIndentationLeft((float) 396.5);
         uL.setSpacingAfter(-3);
         
-        if(EritrocitosRe<4.7){
+        if(EritrocitosRe<=4.7){
         documento.add(uL);
         }
              
@@ -2278,7 +2278,7 @@ String user = "", nom_paciente = "";
         uL1.setIndentationLeft((float) 396.5);
         uL1.setSpacingAfter(-3);
    
-        if(EritrocitosRe>=4.7 && EritrocitosRe<=5.2){
+        if(EritrocitosRe>4.7 && EritrocitosRe<5.2){
         documento.add(uL1);
         } 
           
@@ -2287,7 +2287,7 @@ String user = "", nom_paciente = "";
         uL2.setIndentationLeft((float) 396.5);
         uL2.setSpacingAfter(-3);
    
-        if(EritrocitosRe>5.2){
+        if(EritrocitosRe>=5.2){
         documento.add(uL2);
         } 
         
@@ -2296,7 +2296,7 @@ String user = "", nom_paciente = "";
         Num511.setIndentationLeft((float) 446);
         Num511.setSpacingAfter(-3);
         
-        if(EritrocitosRe<4.7){
+        if(EritrocitosRe<=4.7){
         documento.add(Num511);
         }
         
@@ -2305,7 +2305,7 @@ String user = "", nom_paciente = "";
         Num512.setIndentationLeft((float) 446);
         Num512.setSpacingAfter(-3);
    
-        if(EritrocitosRe>=4.7 && EritrocitosRe<=5.2){
+        if(EritrocitosRe>4.7 && EritrocitosRe<5.2){
         documento.add(Num512);
         }
         
@@ -2314,7 +2314,7 @@ String user = "", nom_paciente = "";
         Num513.setIndentationLeft((float) 446);
         Num513.setSpacingAfter(-3);
    
-        if(EritrocitosRe>5.2){
+        if(EritrocitosRe>=5.2){
         documento.add(Num513);
         }
         
@@ -2323,7 +2323,7 @@ String user = "", nom_paciente = "";
         Num411.setIndentationLeft((float) 511);
         Num411.setSpacingAfter(-3);
         
-        if(EritrocitosRe<4.7){
+        if(EritrocitosRe<=4.7){
         documento.add(Num411);
         }
              
@@ -2332,7 +2332,7 @@ String user = "", nom_paciente = "";
         Num412.setIndentationLeft((float) 511);
         Num412.setSpacingAfter(-3);
    
-        if(EritrocitosRe>=4.7 && EritrocitosRe<=5.2){
+        if(EritrocitosRe>4.7 && EritrocitosRe<5.2){
         documento.add(Num412);
         } 
           
@@ -2341,7 +2341,7 @@ String user = "", nom_paciente = "";
         Num413.setIndentationLeft((float) 511);
         Num413.setSpacingAfter(-3);
    
-        if(EritrocitosRe>5.2){
+        if(EritrocitosRe>=5.2){
         documento.add(Num413);
         }   
         
@@ -2350,7 +2350,7 @@ String user = "", nom_paciente = "";
         copias111.setIndentationLeft(17);
         copias111.setSpacingAfter(-3);
         
-        if(HemoglobinaRe<12.8){
+        if(HemoglobinaRe<=12.8){
         documento.add(copias111);
         }
              
@@ -2359,7 +2359,7 @@ String user = "", nom_paciente = "";
         copias112.setIndentationLeft(17);
         copias112.setSpacingAfter(-3);
    
-        if(HemoglobinaRe>=12.8 && HemoglobinaRe<=14){
+        if(HemoglobinaRe>12.8 && HemoglobinaRe<14){
         documento.add(copias112);
         } 
           
@@ -2368,7 +2368,7 @@ String user = "", nom_paciente = "";
         copias113.setIndentationLeft(17);
         copias113.setSpacingAfter(-3);
    
-        if(HemoglobinaRe>14){
+        if(HemoglobinaRe>=14){
         documento.add(copias113);
         } 
         
@@ -2391,7 +2391,7 @@ String user = "", nom_paciente = "";
         HemoglobinaR1.setSpacingBefore((float) -12.5);
         HemoglobinaR1.setSpacingAfter(-3);
        
-        if(txt_Hemoglobina.getText().contains(".") && HemoglobinaRe>10 && HemoglobinaRe<12.8){
+        if(txt_Hemoglobina.getText().contains(".") && HemoglobinaRe>10 && HemoglobinaRe<=12.8){
         HemoglobinaR1.setIndentationLeft((float) 324);
         documento.add(HemoglobinaR1);
         } else {
@@ -2409,7 +2409,7 @@ String user = "", nom_paciente = "";
         HemoglobinaR2.setIndentationLeft((float) 324);
         documento.add(HemoglobinaR2);
         } else {
-        if(HemoglobinaRe>=13 && HemoglobinaRe<=14) {  
+        if(HemoglobinaRe==13) {  
         HemoglobinaR2.setIndentationLeft((float) 327);
         documento.add(HemoglobinaR2);
           }
@@ -2459,7 +2459,7 @@ String user = "", nom_paciente = "";
         copiasM111.setIndentationLeft(375);
         copiasM111.setSpacingAfter(-3);
         
-        if(HemoglobinaRe<12.8){
+        if(HemoglobinaRe<=12.8){
         documento.add(copiasM111);
         }
              
@@ -2468,7 +2468,7 @@ String user = "", nom_paciente = "";
         copiasM112.setIndentationLeft(375);
         copiasM112.setSpacingAfter(-3);
    
-        if(HemoglobinaRe>=12.8 && HemoglobinaRe<=14){
+        if(HemoglobinaRe>12.8 && HemoglobinaRe<14){
         documento.add(copiasM112);
         } 
           
@@ -2477,7 +2477,7 @@ String user = "", nom_paciente = "";
         copiasM113.setIndentationLeft(375);
         copiasM113.setSpacingAfter(-3);
    
-        if(HemoglobinaRe>14){
+        if(HemoglobinaRe>=14){
         documento.add(copiasM113);
         } 
         
@@ -2486,7 +2486,7 @@ String user = "", nom_paciente = "";
         Num5111.setIndentationLeft((float) 443);
         Num5111.setSpacingAfter(-3);
         
-          if(HemoglobinaRe<12.8){
+          if(HemoglobinaRe<=12.8){
         documento.add(Num5111);
         }
              
@@ -2495,7 +2495,7 @@ String user = "", nom_paciente = "";
         Num5112.setIndentationLeft((float) 443);
         Num5112.setSpacingAfter(-3);
    
-        if(HemoglobinaRe>=12.8 && HemoglobinaRe<=14){
+        if(HemoglobinaRe>12.8 && HemoglobinaRe<14){
         documento.add(Num5112);
         } 
           
@@ -2504,7 +2504,7 @@ String user = "", nom_paciente = "";
         Num5113.setIndentationLeft((float) 443);
         Num5113.setSpacingAfter(-3);
    
-        if(HemoglobinaRe>14){
+        if(HemoglobinaRe>=14){
         documento.add(Num5113);
         } 
         
@@ -2513,7 +2513,7 @@ String user = "", nom_paciente = "";
         Num4111.setIndentationLeft((float) 512);
         Num4111.setSpacingAfter(-3);
         
-           if(HemoglobinaRe<12.8){
+           if(HemoglobinaRe<=12.8){
         documento.add(Num4111);
         }
              
@@ -2522,7 +2522,7 @@ String user = "", nom_paciente = "";
         Num4112.setIndentationLeft((float) 512);
         Num4112.setSpacingAfter(-3);
    
-        if(HemoglobinaRe>=12.8 && HemoglobinaRe<=14){
+        if(HemoglobinaRe>12.8 && HemoglobinaRe<14){
         documento.add(Num4112);
         } 
           
@@ -2531,7 +2531,7 @@ String user = "", nom_paciente = "";
         Num4113.setIndentationLeft((float) 512);
         Num4113.setSpacingAfter(-3);
    
-        if(HemoglobinaRe>14){
+        if(HemoglobinaRe>=14){
         documento.add(Num4113);
         } 
         
@@ -2540,7 +2540,7 @@ String user = "", nom_paciente = "";
         copias1111.setIndentationLeft(17);
         copias1111.setSpacingAfter(-3);
         
-        if(HematocritoRe<34){
+        if(HematocritoRe<=34){
         documento.add(copias1111);
         }
              
@@ -2549,7 +2549,7 @@ String user = "", nom_paciente = "";
         copias1112.setIndentationLeft(17);
         copias1112.setSpacingAfter(-3);
    
-        if(HematocritoRe>=34 && HematocritoRe<=45){
+        if(HematocritoRe>34 && HematocritoRe<45){
         documento.add(copias1112);
         } 
           
@@ -2558,7 +2558,7 @@ String user = "", nom_paciente = "";
         copias1113.setIndentationLeft(17);
         copias1113.setSpacingAfter(-3);
    
-        if(HematocritoRe>45){
+        if(HematocritoRe>=45){
         documento.add(copias1113);
         } 
         
@@ -2585,7 +2585,7 @@ String user = "", nom_paciente = "";
         HematocritoR1.setIndentationLeft((float) 324);
         documento.add(HematocritoR1);
         } else {
-        if(HematocritoRe>=10 && HematocritoRe<=33) {  
+        if(HematocritoRe>=10 && HematocritoRe<=34) {  
         HematocritoR1.setIndentationLeft((float) 327);
         documento.add(HematocritoR1);
           }
@@ -2599,7 +2599,7 @@ String user = "", nom_paciente = "";
         HematocritoR2.setIndentationLeft((float) 324);
         documento.add(HematocritoR2);
         } else {
-        if(HematocritoRe>=34 && HematocritoRe<=45) {  
+        if(HematocritoRe>=35 && HematocritoRe<=44) {  
         HematocritoR2.setIndentationLeft((float) 327);
         documento.add(HematocritoR2);
           }
@@ -2613,7 +2613,7 @@ String user = "", nom_paciente = "";
         HematocritoR3.setIndentationLeft((float) 324);
         documento.add(HematocritoR3);
         } else {
-        if(HematocritoRe>=46 && HematocritoRe<=99) {  
+        if(HematocritoRe>=45 && HematocritoRe<=99) {  
         HematocritoR3.setIndentationLeft((float) 327);
         documento.add(HematocritoR3);
           }
@@ -2649,7 +2649,7 @@ String user = "", nom_paciente = "";
         copiasM1111.setIndentationLeft((float) 386);
         copiasM1111.setSpacingAfter(-3);
         
-        if(HematocritoRe<34){
+        if(HematocritoRe<=34){
         documento.add(copiasM1111);
         }
              
@@ -2658,7 +2658,7 @@ String user = "", nom_paciente = "";
         copiasM1112.setIndentationLeft((float) 386);
         copiasM1112.setSpacingAfter(-3);
    
-        if(HematocritoRe>=34 && HematocritoRe<=45){
+        if(HematocritoRe>34 && HematocritoRe<45){
         documento.add(copiasM1112);
         } 
           
@@ -2667,7 +2667,7 @@ String user = "", nom_paciente = "";
         copiasM1113.setIndentationLeft((float) 386);
         copiasM1113.setSpacingAfter(-3);
    
-        if(HematocritoRe>45){
+        if(HematocritoRe>=45){
         documento.add(copiasM1113);
         } 
         
@@ -2676,7 +2676,7 @@ String user = "", nom_paciente = "";
         Num51111.setIndentationLeft((float) 447);
         Num51111.setSpacingAfter(-3);
         
-        if(HematocritoRe<34){
+        if(HematocritoRe<=34){
         documento.add(Num51111);
         }
              
@@ -2685,7 +2685,7 @@ String user = "", nom_paciente = "";
         Num51112.setIndentationLeft((float) 447);
         Num51112.setSpacingAfter(-3);
    
-        if(HematocritoRe>=34 && HematocritoRe<=45){
+        if(HematocritoRe>34 && HematocritoRe<45){
         documento.add(Num51112);
         } 
           
@@ -2694,7 +2694,7 @@ String user = "", nom_paciente = "";
         Num51113.setIndentationLeft((float) 447);
         Num51113.setSpacingAfter(-3);
    
-        if(HematocritoRe>45){
+        if(HematocritoRe>=45){
         documento.add(Num51113);
         } 
         
@@ -2703,7 +2703,7 @@ String user = "", nom_paciente = "";
         Num41111.setIndentationLeft((float) 512);
         Num41111.setSpacingAfter(-3);
         
-        if(HematocritoRe<34){
+        if(HematocritoRe<=34){
         documento.add(Num41111);
         }
              
@@ -2712,7 +2712,7 @@ String user = "", nom_paciente = "";
         Num41112.setIndentationLeft((float) 512);
         Num41112.setSpacingAfter(-3);
    
-        if(HematocritoRe>=34 && HematocritoRe<=45){
+        if(HematocritoRe>34 && HematocritoRe<45){
         documento.add(Num41112);
         } 
           
@@ -2721,7 +2721,7 @@ String user = "", nom_paciente = "";
         Num41113.setIndentationLeft((float) 512);
         Num41113.setSpacingAfter(-3);
    
-        if(HematocritoRe>45){
+        if(HematocritoRe>=45){
         documento.add(Num41113);
         } 
         
@@ -2730,7 +2730,7 @@ String user = "", nom_paciente = "";
         VCM.setIndentationLeft(17);
         VCM.setSpacingAfter(-3);
         
-        if(VolumenGlobularMedioVCMRe<84){
+        if(VolumenGlobularMedioVCMRe<=84){
         documento.add(VCM);
         }
              
@@ -2739,7 +2739,7 @@ String user = "", nom_paciente = "";
         VCM1.setIndentationLeft(17);
         VCM1.setSpacingAfter(-3);
    
-        if(VolumenGlobularMedioVCMRe>=84 && VolumenGlobularMedioVCMRe<=104){
+        if(VolumenGlobularMedioVCMRe>84 && VolumenGlobularMedioVCMRe<104){
         documento.add(VCM1);
         } 
           
@@ -2748,7 +2748,7 @@ String user = "", nom_paciente = "";
         VCM2.setIndentationLeft(17);
         VCM2.setSpacingAfter(-3);
    
-        if(VolumenGlobularMedioVCMRe>104){
+        if(VolumenGlobularMedioVCMRe>=104){
         documento.add(VCM2);
         } 
         
@@ -2775,7 +2775,7 @@ String user = "", nom_paciente = "";
         VCMR1.setIndentationLeft((float) 324);
         documento.add(VCMR1);
         } else {
-        if(VolumenGlobularMedioVCMRe>=10 && VolumenGlobularMedioVCMRe<=83) {  
+        if(VolumenGlobularMedioVCMRe>=10 && VolumenGlobularMedioVCMRe<=84) {  
         VCMR1.setIndentationLeft((float) 327);
         documento.add(VCMR1);
           }
@@ -2789,7 +2789,7 @@ String user = "", nom_paciente = "";
         VCMR2.setIndentationLeft((float) 324);
         documento.add(VCMR2);
         } else {
-        if(VolumenGlobularMedioVCMRe>=84 && VolumenGlobularMedioVCMRe<=99) {  
+        if(VolumenGlobularMedioVCMRe>=85 && VolumenGlobularMedioVCMRe<=99) {  
         VCMR2.setIndentationLeft((float) 327);
         documento.add(VCMR2);
           }
@@ -2803,7 +2803,7 @@ String user = "", nom_paciente = "";
         VCMR3.setIndentationLeft((float) 323);
         documento.add(VCMR3);
         } else {
-        if(VolumenGlobularMedioVCMRe>=100 && VolumenGlobularMedioVCMRe<=104) {  
+        if(VolumenGlobularMedioVCMRe>=100 && VolumenGlobularMedioVCMRe<=103) {  
         VCMR3.setIndentationLeft((float) 325);
         documento.add(VCMR3);
           }
@@ -2817,7 +2817,7 @@ String user = "", nom_paciente = "";
         VCMR4.setIndentationLeft((float) 323);
         documento.add(VCMR4);
         } else {
-        if(VolumenGlobularMedioVCMRe>=105 && VolumenGlobularMedioVCMRe<=999) {  
+        if(VolumenGlobularMedioVCMRe>=104 && VolumenGlobularMedioVCMRe<=999) {  
         VCMR4.setIndentationLeft((float) 325);
         documento.add(VCMR4);
           }
@@ -2839,7 +2839,7 @@ String user = "", nom_paciente = "";
         VCMV.setIndentationLeft(386);
         VCMV.setSpacingAfter(-3);
         
-        if(VolumenGlobularMedioVCMRe<84){
+        if(VolumenGlobularMedioVCMRe<=84){
         documento.add(VCMV);
         }
              
@@ -2848,7 +2848,7 @@ String user = "", nom_paciente = "";
         VCMV1.setIndentationLeft(386);
         VCMV1.setSpacingAfter(-3);
    
-        if(VolumenGlobularMedioVCMRe>=84 && VolumenGlobularMedioVCMRe<=104){
+        if(VolumenGlobularMedioVCMRe>84 && VolumenGlobularMedioVCMRe<104){
         documento.add(VCMV1);
         } 
           
@@ -2857,7 +2857,7 @@ String user = "", nom_paciente = "";
         VCMV2.setIndentationLeft(386);
         VCMV2.setSpacingAfter(-3);
    
-        if(VolumenGlobularMedioVCMRe>104){
+        if(VolumenGlobularMedioVCMRe>=104){
         documento.add(VCMV2);
         } 
         
@@ -2866,7 +2866,7 @@ String user = "", nom_paciente = "";
         VCMref.setIndentationLeft((float) 447);
         VCMref.setSpacingAfter(-3);
         
-        if(VolumenGlobularMedioVCMRe<84){
+        if(VolumenGlobularMedioVCMRe<=84){
         documento.add(VCMref);
         }
              
@@ -2875,7 +2875,7 @@ String user = "", nom_paciente = "";
         VCMref1.setIndentationLeft((float) 447);
         VCMref1.setSpacingAfter(-3);
    
-        if(VolumenGlobularMedioVCMRe>=84 && VolumenGlobularMedioVCMRe<=104){
+        if(VolumenGlobularMedioVCMRe>84 && VolumenGlobularMedioVCMRe<104){
         documento.add(VCMref1);
         } 
           
@@ -2884,7 +2884,7 @@ String user = "", nom_paciente = "";
         VCMref2.setIndentationLeft((float) 447);
         VCMref2.setSpacingAfter(-3);
    
-        if(VolumenGlobularMedioVCMRe>104){
+        if(VolumenGlobularMedioVCMRe>=104){
         documento.add(VCMref2);
         } 
         
@@ -2893,7 +2893,7 @@ String user = "", nom_paciente = "";
         VCMref3.setIndentationLeft((float) 510);
         VCMref3.setSpacingAfter(-3);
         
-        if(VolumenGlobularMedioVCMRe<84){
+        if(VolumenGlobularMedioVCMRe<=84){
         documento.add(VCMref3);
         }
              
@@ -2902,7 +2902,7 @@ String user = "", nom_paciente = "";
         VCMref4.setIndentationLeft((float) 510);
         VCMref4.setSpacingAfter(-3);
    
-        if(VolumenGlobularMedioVCMRe>=84 && VolumenGlobularMedioVCMRe<=104){
+        if(VolumenGlobularMedioVCMRe>84 && VolumenGlobularMedioVCMRe<104){
         documento.add(VCMref4);
         } 
           
@@ -2911,7 +2911,7 @@ String user = "", nom_paciente = "";
         VCMref5.setIndentationLeft((float) 510);
         VCMref5.setSpacingAfter(-3);
    
-        if(VolumenGlobularMedioVCMRe>104){
+        if(VolumenGlobularMedioVCMRe>=104){
         documento.add(VCMref5);
         } 
         
@@ -2920,7 +2920,7 @@ String user = "", nom_paciente = "";
         HCM.setIndentationLeft(17);
         HCM.setSpacingAfter(-3);
   
-        if(ConcentracióMediadeHemoglobinaHCMRe<27){
+        if(ConcentracióMediadeHemoglobinaHCMRe<=27){
         documento.add(HCM);
         }
              
@@ -2929,7 +2929,7 @@ String user = "", nom_paciente = "";
         HCM1.setIndentationLeft(17);
         HCM1.setSpacingAfter(-3);
    
-        if(ConcentracióMediadeHemoglobinaHCMRe>=27 && ConcentracióMediadeHemoglobinaHCMRe<=35){
+        if(ConcentracióMediadeHemoglobinaHCMRe>27 && ConcentracióMediadeHemoglobinaHCMRe<35){
         documento.add(HCM1);
         } 
           
@@ -2938,7 +2938,7 @@ String user = "", nom_paciente = "";
         HCM2.setIndentationLeft(17);
         HCM2.setSpacingAfter(-3);
    
-        if(ConcentracióMediadeHemoglobinaHCMRe>35){
+        if(ConcentracióMediadeHemoglobinaHCMRe>=35){
         documento.add(HCM2);
         } 
         
@@ -2965,7 +2965,7 @@ String user = "", nom_paciente = "";
         HCMR1.setIndentationLeft((float) 324);
         documento.add(HCMR1);
         } else {
-        if(ConcentracióMediadeHemoglobinaHCMRe>=10 && ConcentracióMediadeHemoglobinaHCMRe<=26) {  
+        if(ConcentracióMediadeHemoglobinaHCMRe>=10 && ConcentracióMediadeHemoglobinaHCMRe<=27) {  
         HCMR1.setIndentationLeft((float) 327);
         documento.add(HCMR1);
           }
@@ -2979,7 +2979,7 @@ String user = "", nom_paciente = "";
         HCMR2.setIndentationLeft((float) 324);
         documento.add(HCMR2);
         } else {
-        if(ConcentracióMediadeHemoglobinaHCMRe>=27 && ConcentracióMediadeHemoglobinaHCMRe<=35) {  
+        if(ConcentracióMediadeHemoglobinaHCMRe>=28 && ConcentracióMediadeHemoglobinaHCMRe<=34) {  
         HCMR2.setIndentationLeft((float) 327);
         documento.add(HCMR2);
           }
@@ -2993,7 +2993,7 @@ String user = "", nom_paciente = "";
         HCMR4.setIndentationLeft((float) 324);
         documento.add(HCMR4);
         } else {
-        if(ConcentracióMediadeHemoglobinaHCMRe>=36 && ConcentracióMediadeHemoglobinaHCMRe<=99) {  
+        if(ConcentracióMediadeHemoglobinaHCMRe>=35 && ConcentracióMediadeHemoglobinaHCMRe<=99) {  
         HCMR4.setIndentationLeft((float) 327);
         documento.add(HCMR4);
           }
@@ -3029,7 +3029,7 @@ String user = "", nom_paciente = "";
         HCMV.setIndentationLeft(385);
         HCMV.setSpacingAfter(-3);
         
-        if(ConcentracióMediadeHemoglobinaHCMRe<27){
+        if(ConcentracióMediadeHemoglobinaHCMRe<=27){
         documento.add(HCMV);
         }
              
@@ -3038,7 +3038,7 @@ String user = "", nom_paciente = "";
         HCMV1.setIndentationLeft(385);
         HCMV1.setSpacingAfter(-3);
    
-        if(ConcentracióMediadeHemoglobinaHCMRe>=27 && ConcentracióMediadeHemoglobinaHCMRe<=35){
+        if(ConcentracióMediadeHemoglobinaHCMRe>27 && ConcentracióMediadeHemoglobinaHCMRe<35){
         documento.add(HCMV1);
         } 
           
@@ -3047,7 +3047,7 @@ String user = "", nom_paciente = "";
         HCMV2.setIndentationLeft(385);
         HCMV2.setSpacingAfter(-3);
    
-        if(ConcentracióMediadeHemoglobinaHCMRe>35){
+        if(ConcentracióMediadeHemoglobinaHCMRe>=35){
         documento.add(HCMV2);
         }
         
@@ -3056,7 +3056,7 @@ String user = "", nom_paciente = "";
         HCMref.setIndentationLeft((float) 447);
         HCMref.setSpacingAfter(-3);
         
-        if(ConcentracióMediadeHemoglobinaHCMRe<27){
+        if(ConcentracióMediadeHemoglobinaHCMRe<=27){
         documento.add(HCMref);
         }
              
@@ -3065,7 +3065,7 @@ String user = "", nom_paciente = "";
         HCMref1.setIndentationLeft((float) 447);
         HCMref1.setSpacingAfter(-3);
    
-        if(ConcentracióMediadeHemoglobinaHCMRe>=27 && ConcentracióMediadeHemoglobinaHCMRe<=35){
+        if(ConcentracióMediadeHemoglobinaHCMRe>27 && ConcentracióMediadeHemoglobinaHCMRe<35){
         documento.add(HCMref1);
         } 
           
@@ -3074,7 +3074,7 @@ String user = "", nom_paciente = "";
         HCMref2.setIndentationLeft((float) 447);
         HCMref2.setSpacingAfter(-3);
    
-        if(ConcentracióMediadeHemoglobinaHCMRe>35){
+        if(ConcentracióMediadeHemoglobinaHCMRe>=35){
         documento.add(HCMref2);
         }
         
@@ -3083,7 +3083,7 @@ String user = "", nom_paciente = "";
         HCMref12.setIndentationLeft((float) 512);
         HCMref12.setSpacingAfter(-3);
         
-        if(ConcentracióMediadeHemoglobinaHCMRe<27){
+        if(ConcentracióMediadeHemoglobinaHCMRe<=27){
         documento.add(HCMref12);
         }
              
@@ -3092,7 +3092,7 @@ String user = "", nom_paciente = "";
         HCMref122.setIndentationLeft((float) 512);
         HCMref122.setSpacingAfter(-3);
    
-        if(ConcentracióMediadeHemoglobinaHCMRe>=27 && ConcentracióMediadeHemoglobinaHCMRe<=35){
+        if(ConcentracióMediadeHemoglobinaHCMRe>27 && ConcentracióMediadeHemoglobinaHCMRe<35){
         documento.add(HCMref122);
         } 
           
@@ -3101,7 +3101,7 @@ String user = "", nom_paciente = "";
         HCMref123.setIndentationLeft((float) 512);
         HCMref123.setSpacingAfter(-3);
    
-        if(ConcentracióMediadeHemoglobinaHCMRe>35){
+        if(ConcentracióMediadeHemoglobinaHCMRe>=35){
         documento.add(HCMref123);
         }
         
@@ -3110,7 +3110,7 @@ String user = "", nom_paciente = "";
         CHCM.setIndentationLeft(17);
         CHCM.setSpacingAfter(-3);
         
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<29){
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=29){
         documento.add(CHCM);
         }
              
@@ -3119,7 +3119,7 @@ String user = "", nom_paciente = "";
         CHCM1.setIndentationLeft(17);
         CHCM1.setSpacingAfter(-3);
    
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=29 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=35){
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>29 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<35){
         documento.add(CHCM1);
         } 
           
@@ -3128,7 +3128,7 @@ String user = "", nom_paciente = "";
         CHCM2.setIndentationLeft(17);
         CHCM2.setSpacingAfter(-3);
    
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>35){
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=35){
         documento.add(CHCM2);
         } 
         
@@ -3155,7 +3155,7 @@ String user = "", nom_paciente = "";
         CHCMR1.setIndentationLeft((float) 324);
         documento.add(CHCMR1);
         } else {
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=10 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=28) {  
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=10 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=29) {  
         CHCMR1.setIndentationLeft((float) 327);
         documento.add(CHCMR1);
           }
@@ -3169,7 +3169,7 @@ String user = "", nom_paciente = "";
         CHCMR2.setIndentationLeft((float) 324);
         documento.add(CHCMR2);
         } else {
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=29 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=35) {  
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=30 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=34) {  
         CHCMR2.setIndentationLeft((float) 327);
         documento.add(CHCMR2);
           }
@@ -3179,11 +3179,11 @@ String user = "", nom_paciente = "";
         CHCMR3.setSpacingBefore((float) -12.5);
         CHCMR3.setSpacingAfter(-3);
             
-        if(txt_ConcentraciónMediadeHemoglobinaCorpuscularCHCM.getText().contains(".") && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>36 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<100){
+        if(txt_ConcentraciónMediadeHemoglobinaCorpuscularCHCM.getText().contains(".") && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>35 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<100){
         CHCMR3.setIndentationLeft((float) 324);
         documento.add(CHCMR3);
         } else {
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=36 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=99) {  
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=35 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=99) {  
         CHCMR3.setIndentationLeft((float) 327);
         documento.add(CHCMR3);
           }
@@ -3219,7 +3219,7 @@ String user = "", nom_paciente = "";
         CHCMV.setIndentationLeft(380);
         CHCMV.setSpacingAfter(-3);
         
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<29){
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=29){
         documento.add(CHCMV);
         }
              
@@ -3228,7 +3228,7 @@ String user = "", nom_paciente = "";
         CHCMV1.setIndentationLeft(380);
         CHCMV1.setSpacingAfter(-3);
    
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=29 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=35){
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>29 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<35){
         documento.add(CHCMV1);
         } 
           
@@ -3237,7 +3237,7 @@ String user = "", nom_paciente = "";
         CHCMV2.setIndentationLeft(380);
         CHCMV2.setSpacingAfter(-3);
    
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>35){
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=35){
         documento.add(CHCMV2);
         } 
         
@@ -3246,7 +3246,7 @@ String user = "", nom_paciente = "";
         CHCMref.setIndentationLeft((float) 447);
         CHCMref.setSpacingAfter(-3);
         
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<29){
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=29){
         documento.add(CHCMref);
         }
              
@@ -3255,7 +3255,7 @@ String user = "", nom_paciente = "";
         CHCMref1.setIndentationLeft((float) 447);
         CHCMref1.setSpacingAfter(-3);
    
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=29 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=35){
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>29 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<35){
         documento.add(CHCMref1);
         } 
           
@@ -3264,7 +3264,7 @@ String user = "", nom_paciente = "";
         CHCMref2.setIndentationLeft((float) 447);
         CHCMref2.setSpacingAfter(-3);
    
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>35){
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=35){
         documento.add(CHCMref2);
         } 
         
@@ -3273,25 +3273,25 @@ String user = "", nom_paciente = "";
         CHCMref12.setIndentationLeft((float) 512);
         CHCMref12.setSpacingAfter(-3);
         
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<29){
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=29){
         documento.add(CHCMref12);
         }
              
-        Paragraph CHCMref13 = new  Paragraph ("36" , FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
+        Paragraph CHCMref13 = new  Paragraph ("35" , FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         CHCMref13.setSpacingBefore((float) -12);
         CHCMref13.setIndentationLeft((float) 512);
         CHCMref13.setSpacingAfter(-3);
    
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=29 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<=35){
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>29 && ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe<35){
         documento.add(CHCMref13);
         } 
           
-        Paragraph CHCMref14 = new  Paragraph ("36" , FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
+        Paragraph CHCMref14 = new  Paragraph ("35" , FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
         CHCMref14.setSpacingBefore((float) -12);
         CHCMref14.setIndentationLeft((float) 512);
         CHCMref14.setSpacingAfter(-3);
    
-        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>35){
+        if(ConcentraciónMediadeHemoglobinaCorpuscularCHCMRe>=35){
         documento.add(CHCMref14);
         } 
         
@@ -3300,7 +3300,7 @@ String user = "", nom_paciente = "";
         RDW.setIndentationLeft(17);
         RDW.setSpacingAfter(-3);
         
-        if(ÍndicededistribucióndeeritrocitosRDWRe<10){
+        if(ÍndicededistribucióndeeritrocitosRDWRe<=10){
         documento.add(RDW);
         }
              
@@ -3309,7 +3309,7 @@ String user = "", nom_paciente = "";
         RDW1.setIndentationLeft(17);
         RDW1.setSpacingAfter(-3);
    
-        if(ÍndicededistribucióndeeritrocitosRDWRe>=10 && ÍndicededistribucióndeeritrocitosRDWRe<=15){
+        if(ÍndicededistribucióndeeritrocitosRDWRe>10 && ÍndicededistribucióndeeritrocitosRDWRe<15){
         documento.add(RDW1);
         } 
           
@@ -3318,7 +3318,7 @@ String user = "", nom_paciente = "";
         RDW2.setIndentationLeft(17);
         RDW2.setSpacingAfter(-3);
    
-        if(ÍndicededistribucióndeeritrocitosRDWRe>15){
+        if(ÍndicededistribucióndeeritrocitosRDWRe>=15){
         documento.add(RDW2);
         } 
         
@@ -3336,6 +3336,15 @@ String user = "", nom_paciente = "";
         documento.add(RDWR);
           }
         }
+
+        Paragraph RDWR1A = new  Paragraph (txt_ÍndicededistribucióndeeritrocitosRDW.getText() , FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
+        RDWR1A.setSpacingBefore((float) -12.5);
+        RDWR1A.setSpacingAfter(-3);
+               
+        if(ÍndicededistribucióndeeritrocitosRDWRe==10){
+        RDWR1A.setIndentationLeft((float) 327);
+        documento.add(RDWR1A);
+        } 
         
         Paragraph RDWR1 = new  Paragraph (txt_ÍndicededistribucióndeeritrocitosRDW.getText() , FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         RDWR1.setSpacingBefore((float) -12.5);
@@ -3345,7 +3354,7 @@ String user = "", nom_paciente = "";
         RDWR1.setIndentationLeft((float) 324);
         documento.add(RDWR1);
         } else {
-        if(ÍndicededistribucióndeeritrocitosRDWRe>=10 && ÍndicededistribucióndeeritrocitosRDWRe<=15) {  
+        if(ÍndicededistribucióndeeritrocitosRDWRe>=11 && ÍndicededistribucióndeeritrocitosRDWRe<=14) {  
         RDWR1.setIndentationLeft((float) 327);
         documento.add(RDWR1);
           }
@@ -3359,7 +3368,7 @@ String user = "", nom_paciente = "";
         RDWR2.setIndentationLeft((float) 324);
         documento.add(RDWR2);
         } else {
-        if(ÍndicededistribucióndeeritrocitosRDWRe>=16 && ÍndicededistribucióndeeritrocitosRDWRe<=99) {  
+        if(ÍndicededistribucióndeeritrocitosRDWRe>=15 && ÍndicededistribucióndeeritrocitosRDWRe<=99) {  
         RDWR2.setIndentationLeft((float) 327);
         documento.add(RDWR2);
           }
@@ -3395,7 +3404,7 @@ String user = "", nom_paciente = "";
         RDWV.setIndentationLeft(386);
         RDWV.setSpacingAfter(-3);
         
-        if(ÍndicededistribucióndeeritrocitosRDWRe<10){
+        if(ÍndicededistribucióndeeritrocitosRDWRe<=10){
         documento.add(RDWV);
         }
              
@@ -3404,7 +3413,7 @@ String user = "", nom_paciente = "";
         RDWV1.setIndentationLeft(386);
         RDWV1.setSpacingAfter(-3);
    
-        if(ÍndicededistribucióndeeritrocitosRDWRe>=10 && ÍndicededistribucióndeeritrocitosRDWRe<=15){
+        if(ÍndicededistribucióndeeritrocitosRDWRe>10 && ÍndicededistribucióndeeritrocitosRDWRe<15){
         documento.add(RDWV1);
         } 
           
@@ -3413,7 +3422,7 @@ String user = "", nom_paciente = "";
         RDWV2.setIndentationLeft(386);
         RDWV2.setSpacingAfter(-3);
    
-        if(ÍndicededistribucióndeeritrocitosRDWRe>15){
+        if(ÍndicededistribucióndeeritrocitosRDWRe>=15){
         documento.add(RDWV2);
         } 
         
@@ -3422,7 +3431,7 @@ String user = "", nom_paciente = "";
         RDWref.setIndentationLeft((float) 447);
         RDWref.setSpacingAfter(-3);
         
-        if(ÍndicededistribucióndeeritrocitosRDWRe<10){
+        if(ÍndicededistribucióndeeritrocitosRDWRe<=10){
         documento.add(RDWref);
         }
              
@@ -3431,7 +3440,7 @@ String user = "", nom_paciente = "";
         RDWref1.setIndentationLeft((float) 447);
         RDWref1.setSpacingAfter(-3);
    
-        if(ÍndicededistribucióndeeritrocitosRDWRe>=10 && ÍndicededistribucióndeeritrocitosRDWRe<=15){
+        if(ÍndicededistribucióndeeritrocitosRDWRe>10 && ÍndicededistribucióndeeritrocitosRDWRe<15){
         documento.add(RDWref1);
         } 
           
@@ -3440,7 +3449,7 @@ String user = "", nom_paciente = "";
         RDWref2.setIndentationLeft((float) 447);
         RDWref2.setSpacingAfter(-3);
    
-        if(ÍndicededistribucióndeeritrocitosRDWRe>15){
+        if(ÍndicededistribucióndeeritrocitosRDWRe>=15){
         documento.add(RDWref2);
         }
         
@@ -3449,7 +3458,7 @@ String user = "", nom_paciente = "";
         RDWref12.setIndentationLeft((float) 512);
         RDWref12.setSpacingAfter(-3);
         
-        if(ÍndicededistribucióndeeritrocitosRDWRe<10){
+        if(ÍndicededistribucióndeeritrocitosRDWRe<=10){
         documento.add(RDWref12);
         }
              
@@ -3458,7 +3467,7 @@ String user = "", nom_paciente = "";
         RDWref13.setIndentationLeft((float) 512);
         RDWref13.setSpacingAfter(-3);
    
-        if(ÍndicededistribucióndeeritrocitosRDWRe>=10 && ÍndicededistribucióndeeritrocitosRDWRe<=15){
+        if(ÍndicededistribucióndeeritrocitosRDWRe>10 && ÍndicededistribucióndeeritrocitosRDWRe<15){
         documento.add(RDWref13);
         } 
           
@@ -3467,7 +3476,7 @@ String user = "", nom_paciente = "";
         RDWref14.setIndentationLeft((float) 512);
         RDWref14.setSpacingAfter(-3);
    
-        if(ÍndicededistribucióndeeritrocitosRDWRe>15){
+        if(ÍndicededistribucióndeeritrocitosRDWRe>=15){
         documento.add(RDWref14);
         }
         
@@ -3476,7 +3485,7 @@ String user = "", nom_paciente = "";
         elevado62.setIndentationLeft((float) 393.5);
         elevado62.setSpacingAfter(0);
         
-        if(PlaquetasRe<140){
+        if(PlaquetasRe<=140){
         documento.add(elevado62);
         }
              
@@ -3485,7 +3494,7 @@ String user = "", nom_paciente = "";
         elevado621.setIndentationLeft((float) 393.5);
         elevado621.setSpacingAfter(0);
    
-        if(PlaquetasRe>=140 && PlaquetasRe<=400){
+        if(PlaquetasRe>140 && PlaquetasRe<400){
         documento.add(elevado621);
         } 
           
@@ -3494,7 +3503,7 @@ String user = "", nom_paciente = "";
         elevado622.setIndentationLeft((float) 393.5);
         elevado622.setSpacingAfter(0);
    
-        if(PlaquetasRe>400){
+        if(PlaquetasRe>=400){
         documento.add(elevado622);
         }
 
@@ -3503,7 +3512,7 @@ String user = "", nom_paciente = "";
         Plaquetas.setIndentationLeft(17);
         Plaquetas.setSpacingAfter(-3);
         
-        if(PlaquetasRe<140){
+        if(PlaquetasRe<=140){
         documento.add(Plaquetas);
         }
              
@@ -3512,7 +3521,7 @@ String user = "", nom_paciente = "";
         Plaquetas1.setIndentationLeft(17);
         Plaquetas1.setSpacingAfter(-3);
    
-        if(PlaquetasRe>=140 && PlaquetasRe<=400){
+        if(PlaquetasRe>140 && PlaquetasRe<400){
         documento.add(Plaquetas1);
         } 
           
@@ -3521,7 +3530,7 @@ String user = "", nom_paciente = "";
         Plaquetas2.setIndentationLeft(17);
         Plaquetas2.setSpacingAfter(-3);
    
-        if(PlaquetasRe>400){
+        if(PlaquetasRe>=400){
         documento.add(Plaquetas2);
         }
         
@@ -3563,7 +3572,7 @@ String user = "", nom_paciente = "";
         PlaquetasRD3.setIndentationLeft((float) 323);
         documento.add(PlaquetasRD3);
         } else {
-        if(PlaquetasRe>=100 && PlaquetasRe<=139) {  
+        if(PlaquetasRe>=100 && PlaquetasRe<=140) {  
         PlaquetasRD3.setIndentationLeft((float) 325);
         documento.add(PlaquetasRD3);
           }
@@ -3577,7 +3586,7 @@ String user = "", nom_paciente = "";
         PlaquetasRD4.setIndentationLeft((float) 323);
         documento.add(PlaquetasRD4);
         } else {
-        if(PlaquetasRe>=140 && PlaquetasRe<=400) {  
+        if(PlaquetasRe>=141 && PlaquetasRe<=399) {  
         PlaquetasRD4.setIndentationLeft((float) 325);
         documento.add(PlaquetasRD4);
           }
@@ -3591,7 +3600,7 @@ String user = "", nom_paciente = "";
         PlaquetasRD5.setIndentationLeft((float) 323);
         documento.add(PlaquetasRD5);
         } else {
-        if(PlaquetasRe>=401 && PlaquetasRe<=999) {  
+        if(PlaquetasRe>=400 && PlaquetasRe<=999) {  
         PlaquetasRD5.setIndentationLeft((float) 325);
         documento.add(PlaquetasRD5);
           }
@@ -3613,7 +3622,7 @@ String user = "", nom_paciente = "";
         PlaquetasV.setIndentationLeft(373);
         PlaquetasV.setSpacingAfter(-3);
         
-        if(PlaquetasRe<140){
+        if(PlaquetasRe<=140){
         documento.add(PlaquetasV);
         }
              
@@ -3622,7 +3631,7 @@ String user = "", nom_paciente = "";
         PlaquetasV1.setIndentationLeft(373);
         PlaquetasV1.setSpacingAfter(-3);
    
-        if(PlaquetasRe>=140 && PlaquetasRe<=400){
+        if(PlaquetasRe>140 && PlaquetasRe<400){
         documento.add(PlaquetasV1);
         } 
           
@@ -3631,7 +3640,7 @@ String user = "", nom_paciente = "";
         PlaquetasV2.setIndentationLeft(373);
         PlaquetasV2.setSpacingAfter(-3);
    
-        if(PlaquetasRe>400){
+        if(PlaquetasRe>=400){
         documento.add(PlaquetasV2);
         }
          
@@ -3640,7 +3649,7 @@ String user = "", nom_paciente = "";
         uL22.setIndentationLeft((float) 396.5);
         uL22.setSpacingAfter(-3);
         
-        if(PlaquetasRe<140){
+        if(PlaquetasRe<=140){
         documento.add(uL22);
         }
              
@@ -3649,7 +3658,7 @@ String user = "", nom_paciente = "";
         uL23.setIndentationLeft((float) 396.5);
         uL23.setSpacingAfter(-3);
    
-        if(PlaquetasRe>=140 && PlaquetasRe<=400){
+        if(PlaquetasRe>140 && PlaquetasRe<400){
         documento.add(uL23);
         } 
           
@@ -3658,7 +3667,7 @@ String user = "", nom_paciente = "";
         uL24.setIndentationLeft((float) 396.5);
         uL24.setSpacingAfter(-3);
    
-        if(PlaquetasRe>400){
+        if(PlaquetasRe>=400){
         documento.add(uL24);
         }
         
@@ -3667,7 +3676,7 @@ String user = "", nom_paciente = "";
         Plaquetasref.setIndentationLeft((float) 445);
         Plaquetasref.setSpacingAfter(-3);
         
-        if(PlaquetasRe<140){
+        if(PlaquetasRe<=140){
         documento.add(Plaquetasref);
         }
              
@@ -3676,7 +3685,7 @@ String user = "", nom_paciente = "";
         Plaquetasref1.setIndentationLeft((float) 445);
         Plaquetasref1.setSpacingAfter(-3);
    
-        if(PlaquetasRe>=140 && PlaquetasRe<=400){
+        if(PlaquetasRe>140 && PlaquetasRe<400){
         documento.add(Plaquetasref1);
         } 
           
@@ -3685,7 +3694,7 @@ String user = "", nom_paciente = "";
         Plaquetasref2.setIndentationLeft((float) 445);
         Plaquetasref2.setSpacingAfter(-3);
    
-        if(PlaquetasRe>400){
+        if(PlaquetasRe>=400){
         documento.add(Plaquetasref2);
         }
         
@@ -3694,7 +3703,7 @@ String user = "", nom_paciente = "";
         Plaquetasref12.setIndentationLeft((float) 510);
         Plaquetasref12.setSpacingAfter(-3);
         
-        if(PlaquetasRe<140){
+        if(PlaquetasRe<=140){
         documento.add(Plaquetasref12);
         }
              
@@ -3703,7 +3712,7 @@ String user = "", nom_paciente = "";
         Plaquetasref13.setIndentationLeft((float) 510);
         Plaquetasref13.setSpacingAfter(-3);
    
-        if(PlaquetasRe>=140 && PlaquetasRe<=400){
+        if(PlaquetasRe>140 && PlaquetasRe<400){
         documento.add(Plaquetasref13);
         } 
           
@@ -3712,7 +3721,7 @@ String user = "", nom_paciente = "";
         Plaquetasref14.setIndentationLeft((float) 510);
         Plaquetasref14.setSpacingAfter(-3);
    
-        if(PlaquetasRe>400){
+        if(PlaquetasRe>=400){
         documento.add(Plaquetasref14);
         }
         
@@ -3721,7 +3730,7 @@ String user = "", nom_paciente = "";
         VPM.setIndentationLeft(17);
         VPM.setSpacingAfter(-3);
         
-            if(VolumenPlaquetarioMedioVPMRe<6.8){
+            if(VolumenPlaquetarioMedioVPMRe<=6.8){
         documento.add(VPM);
         }
              
@@ -3730,7 +3739,7 @@ String user = "", nom_paciente = "";
         VPM1.setIndentationLeft(17);
         VPM1.setSpacingAfter(-3);
    
-        if(VolumenPlaquetarioMedioVPMRe>=6.8 && VolumenPlaquetarioMedioVPMRe<=15){
+        if(VolumenPlaquetarioMedioVPMRe>6.8 && VolumenPlaquetarioMedioVPMRe<15){
         documento.add(VPM1);
         } 
           
@@ -3739,7 +3748,7 @@ String user = "", nom_paciente = "";
         VPM2.setIndentationLeft(17);
         VPM2.setSpacingAfter(-3);
    
-        if(VolumenPlaquetarioMedioVPMRe>15){
+        if(VolumenPlaquetarioMedioVPMRe>=15){
         documento.add(VPM2);
         }
         
@@ -3749,7 +3758,7 @@ String user = "", nom_paciente = "";
         VPMR.setSpacingBefore((float) -12.5);
         VPMR.setSpacingAfter(-3);
         
-        if(txt_VolumenPlaquetarioMedioVPM.getText().contains(".") && VolumenPlaquetarioMedioVPMRe>0 && VolumenPlaquetarioMedioVPMRe<6.8){
+        if(txt_VolumenPlaquetarioMedioVPM.getText().contains(".") && VolumenPlaquetarioMedioVPMRe>0 && VolumenPlaquetarioMedioVPMRe<=6.8){
         VPMR.setIndentationLeft((float) 326);
         documento.add(VPMR);
         } else {
@@ -3781,7 +3790,7 @@ String user = "", nom_paciente = "";
         VPMR2.setIndentationLeft((float) 324);
         documento.add(VPMR2);
         } else {
-        if(VolumenPlaquetarioMedioVPMRe>=10 && VolumenPlaquetarioMedioVPMRe<=15) {  
+        if(VolumenPlaquetarioMedioVPMRe>=10 && VolumenPlaquetarioMedioVPMRe<=14) {  
         VPMR2.setIndentationLeft((float) 327);
         documento.add(VPMR2);
           }
@@ -3795,7 +3804,7 @@ String user = "", nom_paciente = "";
         VPMR3.setIndentationLeft((float) 324);
         documento.add(VPMR3);
         } else {
-        if(VolumenPlaquetarioMedioVPMRe>=16 && VolumenPlaquetarioMedioVPMRe<=99) {  
+        if(VolumenPlaquetarioMedioVPMRe>=15 && VolumenPlaquetarioMedioVPMRe<=99) {  
         VPMR3.setIndentationLeft((float) 327);
         documento.add(VPMR3);
           }
@@ -3831,7 +3840,7 @@ String user = "", nom_paciente = "";
         VPMV.setIndentationLeft(386);
         VPMV.setSpacingAfter(-3);
         
-        if(VolumenPlaquetarioMedioVPMRe<6.8){
+        if(VolumenPlaquetarioMedioVPMRe<=6.8){
         documento.add(VPMV);
         }
              
@@ -3840,7 +3849,7 @@ String user = "", nom_paciente = "";
         VPMV1.setIndentationLeft(386);
         VPMV1.setSpacingAfter(-3);
    
-        if(VolumenPlaquetarioMedioVPMRe>=6.8 && VolumenPlaquetarioMedioVPMRe<=15){
+        if(VolumenPlaquetarioMedioVPMRe>6.8 && VolumenPlaquetarioMedioVPMRe<15){
         documento.add(VPMV1);
         } 
           
@@ -3849,7 +3858,7 @@ String user = "", nom_paciente = "";
         VPMV2.setIndentationLeft(386);
         VPMV2.setSpacingAfter(-3);
    
-        if(VolumenPlaquetarioMedioVPMRe>15){
+        if(VolumenPlaquetarioMedioVPMRe>=15){
         documento.add(VPMV2);
         }
         
@@ -3858,7 +3867,7 @@ String user = "", nom_paciente = "";
         VPMref.setIndentationLeft((float) 447);
         VPMref.setSpacingAfter(-3);
         
-        if(VolumenPlaquetarioMedioVPMRe<6.8){
+        if(VolumenPlaquetarioMedioVPMRe<=6.8){
         documento.add(VPMref);
         }
              
@@ -3867,7 +3876,7 @@ String user = "", nom_paciente = "";
         VPMref1.setIndentationLeft((float) 447);
         VPMref1.setSpacingAfter(-3);
    
-        if(VolumenPlaquetarioMedioVPMRe>=6.8 && VolumenPlaquetarioMedioVPMRe<=15){
+        if(VolumenPlaquetarioMedioVPMRe>6.8 && VolumenPlaquetarioMedioVPMRe<15){
         documento.add(VPMref1);
         } 
           
@@ -3876,7 +3885,7 @@ String user = "", nom_paciente = "";
         VPMref2.setIndentationLeft((float) 447);
         VPMref2.setSpacingAfter(-3);
    
-        if(VolumenPlaquetarioMedioVPMRe>15){
+        if(VolumenPlaquetarioMedioVPMRe>=15){
         documento.add(VPMref2);
         }
         
@@ -3885,7 +3894,7 @@ String user = "", nom_paciente = "";
         VPMref12.setIndentationLeft((float) 512);
         VPMref12.setSpacingAfter(-3);
         
-        if(VolumenPlaquetarioMedioVPMRe<6.8){
+        if(VolumenPlaquetarioMedioVPMRe<=6.8){
         documento.add(VPMref12);
         }
              
@@ -3894,7 +3903,7 @@ String user = "", nom_paciente = "";
         VPMref22.setIndentationLeft((float) 512);
         VPMref22.setSpacingAfter(-3);
    
-        if(VolumenPlaquetarioMedioVPMRe>=6.8 && VolumenPlaquetarioMedioVPMRe<=15){
+        if(VolumenPlaquetarioMedioVPMRe>6.8 && VolumenPlaquetarioMedioVPMRe<15){
         documento.add(VPMref22);
         } 
           
@@ -3903,7 +3912,7 @@ String user = "", nom_paciente = "";
         VPMref32.setIndentationLeft((float) 512);
         VPMref32.setSpacingAfter(-3);
    
-        if(VolumenPlaquetarioMedioVPMRe>15){
+        if(VolumenPlaquetarioMedioVPMRe>=15){
         documento.add(VPMref32);
         }
         
@@ -3955,7 +3964,7 @@ String user = "", nom_paciente = "";
         Leucocitostotales.setIndentationLeft(17);
         Leucocitostotales.setSpacingAfter(-3);
         
-               if(LeucocitostotalesTT<=9){
+        if(LeucocitostotalesTT<=9){
         documento.add(Leucocitostotales);
         }
              
@@ -3964,7 +3973,7 @@ String user = "", nom_paciente = "";
         Leucocitostotales1.setIndentationLeft(17);
         Leucocitostotales1.setSpacingAfter(-3);
    
-          if(LeucocitostotalesTT>=4500 && LeucocitostotalesTT<=13000){
+          if(LeucocitostotalesTT>4500 && LeucocitostotalesTT<13000){
         
         documento.add(Leucocitostotales1);
         } 
@@ -3974,7 +3983,7 @@ String user = "", nom_paciente = "";
         Leucocitostotales12.setIndentationLeft(17);
         Leucocitostotales12.setSpacingAfter(-3);  
    
-          if(LeucocitostotalesTT>=10 && LeucocitostotalesTT<4500){
+          if(LeucocitostotalesTT>=10 && LeucocitostotalesTT<=4500){
         
         documento.add(Leucocitostotales12);
         } 
@@ -3984,12 +3993,12 @@ String user = "", nom_paciente = "";
         Leucocitostotales123.setIndentationLeft(17);
         Leucocitostotales123.setSpacingAfter(-3);  
    
-          if(LeucocitostotalesTT>13000){
+          if(LeucocitostotalesTT>=13000){
         
         documento.add(Leucocitostotales123);
         } 
         
-             Paragraph LeucocitostotalesR = new  Paragraph (txt_Leucocitostotales.getText() + " " + "/uL" , FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
+        Paragraph LeucocitostotalesR = new  Paragraph (txt_Leucocitostotales.getText() + " " + "/uL" , FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
         LeucocitostotalesR.setSpacingBefore((float) -12.5);
         LeucocitostotalesR.setIndentationLeft((float) 319);
         LeucocitostotalesR.setSpacingAfter(-3);
@@ -4003,7 +4012,7 @@ String user = "", nom_paciente = "";
         LeucocitostotalesR1.setIndentationLeft((float) 319);
         LeucocitostotalesR1.setSpacingAfter(-3);
    
-          if(LeucocitostotalesTT>=4500 && LeucocitostotalesTT<=13000){
+          if(LeucocitostotalesTT>4500 && LeucocitostotalesTT<13000){
         
         documento.add(LeucocitostotalesR1);
         } 
@@ -4013,7 +4022,7 @@ String user = "", nom_paciente = "";
         LeucocitostotalesR12.setIndentationLeft((float) 319);
         LeucocitostotalesR12.setSpacingAfter(-3);
    
-          if(LeucocitostotalesTT>=10 && LeucocitostotalesTT<4500){
+          if(LeucocitostotalesTT>=10 && LeucocitostotalesTT<=4500){
         
         documento.add(LeucocitostotalesR12);
         } 
@@ -4023,7 +4032,7 @@ String user = "", nom_paciente = "";
         LeucocitostotalesR123.setIndentationLeft((float) 319);
         LeucocitostotalesR123.setSpacingAfter(-3); 
    
-          if(LeucocitostotalesTT>13000){
+          if(LeucocitostotalesTT>=13000){
         
         documento.add(LeucocitostotalesR123);
         }
@@ -4045,7 +4054,7 @@ String user = "", nom_paciente = "";
         LeucocitostotalesP0.setIndentationLeft(380);
         LeucocitostotalesP0.setSpacingAfter(-3);
    
-          if(LeucocitostotalesTT>=4500 && LeucocitostotalesTT<=13000){
+          if(LeucocitostotalesTT>4500 && LeucocitostotalesTT<13000){
         
         documento.add(LeucocitostotalesP0);
         } 
@@ -4056,7 +4065,7 @@ String user = "", nom_paciente = "";
         LeucocitostotalesP2.setIndentationLeft(380);
         LeucocitostotalesP2.setSpacingAfter(-3);
    
-          if(LeucocitostotalesTT>=10 && LeucocitostotalesTT<4500){
+          if(LeucocitostotalesTT>=10 && LeucocitostotalesTT<=4500){
         
         documento.add(LeucocitostotalesP2);
         } 
@@ -4066,7 +4075,7 @@ String user = "", nom_paciente = "";
         LeucocitostotalesP3.setIndentationLeft(380);
         LeucocitostotalesP3.setSpacingAfter(-3);
    
-          if(LeucocitostotalesTT>13000){
+          if(LeucocitostotalesTT>=13000){
         
         documento.add(LeucocitostotalesP3);
         }   
@@ -4087,7 +4096,7 @@ String user = "", nom_paciente = "";
         LeucocitostotalesV1.setIndentationLeft((float) 439);
         LeucocitostotalesV1.setSpacingAfter(-3);
    
-          if(LeucocitostotalesTT>=4500 && LeucocitostotalesTT<=13000){
+          if(LeucocitostotalesTT>4500 && LeucocitostotalesTT<13000){
         
         documento.add(LeucocitostotalesV1);
         } 
@@ -4098,7 +4107,7 @@ String user = "", nom_paciente = "";
         LeucocitostotalesV12.setIndentationLeft((float) 439);
         LeucocitostotalesV12.setSpacingAfter(-3);
    
-          if(LeucocitostotalesTT>=10 && LeucocitostotalesTT<4500){
+          if(LeucocitostotalesTT>=10 && LeucocitostotalesTT<=4500){
         
         documento.add(LeucocitostotalesV12);
         } 
@@ -4108,7 +4117,7 @@ String user = "", nom_paciente = "";
         LeucocitostotalesV123.setIndentationLeft((float) 439);
         LeucocitostotalesV123.setSpacingAfter(-3);
    
-          if(LeucocitostotalesTT>13000){
+          if(LeucocitostotalesTT>=13000){
         
         documento.add(LeucocitostotalesV123);
         }   
@@ -4118,7 +4127,7 @@ String user = "", nom_paciente = "";
         LeucocitostotalesV2.setIndentationLeft((float) 503);
         LeucocitostotalesV2.setSpacingAfter(-3);
         
-                        if(LeucocitostotalesTT<=9){
+        if(LeucocitostotalesTT<=9){
         
         documento.add(LeucocitostotalesV2);
     
@@ -4129,7 +4138,7 @@ String user = "", nom_paciente = "";
         LeucocitostotalesV21.setIndentationLeft((float) 503);
         LeucocitostotalesV21.setSpacingAfter(-3);
    
-          if(LeucocitostotalesTT>=4500 && LeucocitostotalesTT<=13000){
+          if(LeucocitostotalesTT>4500 && LeucocitostotalesTT<13000){
         
         documento.add(LeucocitostotalesV21);
         } 
@@ -4139,7 +4148,7 @@ String user = "", nom_paciente = "";
         LeucocitostotalesV212.setIndentationLeft((float) 503);
         LeucocitostotalesV212.setSpacingAfter(-3);
    
-          if(LeucocitostotalesTT>=10 && LeucocitostotalesTT<4500){
+          if(LeucocitostotalesTT>=10 && LeucocitostotalesTT<=4500){
         
         documento.add(LeucocitostotalesV212);
         } 
@@ -4149,7 +4158,7 @@ String user = "", nom_paciente = "";
         LeucocitostotalesV2123.setIndentationLeft((float) 503);
         LeucocitostotalesV2123.setSpacingAfter(-3);
    
-          if(LeucocitostotalesTT>13000){
+          if(LeucocitostotalesTT>=13000){
         
         documento.add(LeucocitostotalesV2123);
         }  
@@ -4170,7 +4179,7 @@ String user = "", nom_paciente = "";
         NeutrófilosT1.setIndentationLeft(17);
         NeutrófilosT1.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>=1800 && NeutrófilosTT<=8000){
+          if(NeutrófilosTT>1800 && NeutrófilosTT<8000){
         
         documento.add(NeutrófilosT1);
         } 
@@ -4180,7 +4189,7 @@ String user = "", nom_paciente = "";
         NeutrófilosT2.setIndentationLeft(17);
         NeutrófilosT2.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>=10 && NeutrófilosTT<1800){
+          if(NeutrófilosTT>=10 && NeutrófilosTT<=1800){
         
         documento.add(NeutrófilosT2);
         } 
@@ -4190,7 +4199,7 @@ String user = "", nom_paciente = "";
         NeutrófilosT3.setIndentationLeft(17);
         NeutrófilosT3.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>8000){
+          if(NeutrófilosTT>=8000){
         
         documento.add(NeutrófilosT3);
         }   
@@ -4200,7 +4209,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTR.setIndentationLeft((float) 327);
         NeutrófilosTR.setSpacingAfter(-3);
         
-                            if(NeutrófilosTT<=9 && NeutrófilosTP<=9){
+        if(NeutrófilosTT<=9 && NeutrófilosTP<=9){
         
         documento.add(NeutrófilosTR);
                  
@@ -4211,7 +4220,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTR1.setIndentationLeft((float) 327);
         NeutrófilosTR1.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>=1800 && NeutrófilosTT<=8000 && NeutrófilosTP<=9){
+          if(NeutrófilosTT>1800 && NeutrófilosTT<8000 && NeutrófilosTP<=9){
         
         documento.add(NeutrófilosTR1);
         } 
@@ -4221,7 +4230,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTR2.setIndentationLeft((float) 327);
         NeutrófilosTR2.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>=10 && NeutrófilosTT<1800 && NeutrófilosTP<=9){
+          if(NeutrófilosTT>=10 && NeutrófilosTT<=1800 && NeutrófilosTP<=9){
         
         documento.add(NeutrófilosTR2);
         } 
@@ -4231,7 +4240,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTR3.setIndentationLeft((float) 327);
         NeutrófilosTR3.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>8000 && NeutrófilosTP<=9){
+          if(NeutrófilosTT>=8000 && NeutrófilosTP<=9){
         
         documento.add(NeutrófilosTR3);
         } 
@@ -4252,7 +4261,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTR1M.setIndentationLeft((float) 322);
         NeutrófilosTR1M.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>=1800 && NeutrófilosTT<=8000 && NeutrófilosTP>=10){
+          if(NeutrófilosTT>1800 && NeutrófilosTT<8000 && NeutrófilosTP>=10){
         
         documento.add(NeutrófilosTR1M);
         } 
@@ -4262,7 +4271,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTR2M.setIndentationLeft((float) 322);
         NeutrófilosTR2M.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>=10 && NeutrófilosTT<1800 && NeutrófilosTP>=10){
+          if(NeutrófilosTT>=10 && NeutrófilosTT<=1800 && NeutrófilosTP>=10){
         
         documento.add(NeutrófilosTR2M);
         } 
@@ -4272,7 +4281,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTR3M.setIndentationLeft((float) 322);
         NeutrófilosTR3M.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>8000 && NeutrófilosTP>=10){
+          if(NeutrófilosTT>=8000 && NeutrófilosTP>=10){
         
         documento.add(NeutrófilosTR3M);
         }   
@@ -4293,7 +4302,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTV1.setIndentationLeft(380);
         NeutrófilosTV1.setSpacingAfter(-3); 
    
-          if(NeutrófilosTT>=1800 && NeutrófilosTT<=8000){
+          if(NeutrófilosTT>1800 && NeutrófilosTT<8000){
         
         documento.add(NeutrófilosTV1);
         } 
@@ -4303,7 +4312,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTV2.setIndentationLeft(380);
         NeutrófilosTV2.setSpacingAfter(-3); 
    
-          if(NeutrófilosTT>=10 && NeutrófilosTT<1800){
+          if(NeutrófilosTT>=10 && NeutrófilosTT<=1800){
         
         documento.add(NeutrófilosTV2);
         } 
@@ -4313,7 +4322,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTV3.setIndentationLeft(380);
         NeutrófilosTV3.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>8000){
+          if(NeutrófilosTT>=8000){
         
         documento.add(NeutrófilosTV3);
         }  
@@ -4334,7 +4343,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTref1.setIndentationLeft((float) 439);
         NeutrófilosTref1.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>=1800 && NeutrófilosTT<=8000){
+          if(NeutrófilosTT>1800 && NeutrófilosTT<8000){
         
         documento.add(NeutrófilosTref1);
         } 
@@ -4344,7 +4353,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTref22.setIndentationLeft((float) 439);
         NeutrófilosTref22.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>=10 && NeutrófilosTT<1800){
+          if(NeutrófilosTT>=10 && NeutrófilosTT<=1800){
         
         documento.add(NeutrófilosTref22);
         } 
@@ -4354,7 +4363,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTref3.setIndentationLeft((float) 439);
         NeutrófilosTref3.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>8000){
+          if(NeutrófilosTT>=8000){
         
         documento.add(NeutrófilosTref3);
         }   
@@ -4373,7 +4382,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTref21.setIndentationLeft((float) 508.5);
         NeutrófilosTref21.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>=1800 && NeutrófilosTT<=8000){
+          if(NeutrófilosTT>1800 && NeutrófilosTT<8000){
         
         documento.add(NeutrófilosTref21);
         } 
@@ -4383,7 +4392,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTref212.setIndentationLeft((float) 508.5);
         NeutrófilosTref212.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>=10 && NeutrófilosTT<1800){
+          if(NeutrófilosTT>=10 && NeutrófilosTT<=1800){
         
         documento.add(NeutrófilosTref212);
         } 
@@ -4393,7 +4402,7 @@ String user = "", nom_paciente = "";
         NeutrófilosTref2123.setIndentationLeft((float) 508.5);
         NeutrófilosTref2123.setSpacingAfter(-3);
    
-          if(NeutrófilosTT>8000){
+          if(NeutrófilosTT>=8000){
         
         documento.add(NeutrófilosTref2123);
         } 
@@ -4414,7 +4423,7 @@ String user = "", nom_paciente = "";
         NeutrófilosS1.setIndentationLeft(17);
         NeutrófilosS1 .setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>=1700 && Neutrófilossegmentados1TT<=7000){
+          if(Neutrófilossegmentados1TT>1700 && Neutrófilossegmentados1TT<7000){
         
         documento.add(NeutrófilosS1);
         } 
@@ -4424,7 +4433,7 @@ String user = "", nom_paciente = "";
         NeutrófilosS2.setIndentationLeft(17);
         NeutrófilosS2.setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>=10 && Neutrófilossegmentados1TT<1700){
+          if(Neutrófilossegmentados1TT>=10 && Neutrófilossegmentados1TT<=1700){
         
         documento.add(NeutrófilosS2);
         } 
@@ -4434,7 +4443,7 @@ String user = "", nom_paciente = "";
         NeutrófilosS3.setIndentationLeft(17);
         NeutrófilosS3.setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>7000){
+          if(Neutrófilossegmentados1TT>=7000){
         
         documento.add(NeutrófilosS3);
         }   
@@ -4455,7 +4464,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSR1.setIndentationLeft((float) 327);
         NeutrófilosSR1.setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>=1700 && Neutrófilossegmentados1TT<=7000 && Neutrófilossegmentados1TP<=9){
+          if(Neutrófilossegmentados1TT>1700 && Neutrófilossegmentados1TT<7000 && Neutrófilossegmentados1TP<=9){
         
         documento.add(NeutrófilosSR1);
         } 
@@ -4465,7 +4474,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSR2.setIndentationLeft((float) 327);
         NeutrófilosSR2.setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>=10 && Neutrófilossegmentados1TT<1700 && Neutrófilossegmentados1TP<=9){
+          if(Neutrófilossegmentados1TT>=10 && Neutrófilossegmentados1TT<=1700 && Neutrófilossegmentados1TP<=9){
         
         documento.add(NeutrófilosSR2);
         } 
@@ -4475,7 +4484,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSR3.setIndentationLeft((float) 327);
         NeutrófilosSR3.setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>7000 && Neutrófilossegmentados1TP<=9){
+          if(Neutrófilossegmentados1TT>=7000 && Neutrófilossegmentados1TP<=9){
         
         documento.add(NeutrófilosSR3);
         }   
@@ -4496,7 +4505,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSR1P.setIndentationLeft((float) 322);
         NeutrófilosSR1P.setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>=1700 && Neutrófilossegmentados1TT<=7000 && Neutrófilossegmentados1TP>=10){
+          if(Neutrófilossegmentados1TT>1700 && Neutrófilossegmentados1TT<7000 && Neutrófilossegmentados1TP>=10){
         
         documento.add(NeutrófilosSR1P);
         } 
@@ -4506,7 +4515,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSR2P.setIndentationLeft((float) 322);
         NeutrófilosSR2P.setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>=10 && Neutrófilossegmentados1TT<1700 && Neutrófilossegmentados1TP>=10){
+          if(Neutrófilossegmentados1TT>=10 && Neutrófilossegmentados1TT<=1700 && Neutrófilossegmentados1TP>=10){
         
         documento.add(NeutrófilosSR2P);
         } 
@@ -4516,7 +4525,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSR3P.setIndentationLeft((float) 322);
         NeutrófilosSR3P.setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>7000 && Neutrófilossegmentados1TP>=10){
+          if(Neutrófilossegmentados1TT>=7000 && Neutrófilossegmentados1TP>=10){
         
         documento.add(NeutrófilosSR3P);
         }   
@@ -4537,7 +4546,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSV1.setIndentationLeft(380);
         NeutrófilosSV1.setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>=1700 && Neutrófilossegmentados1TT<=7000){
+          if(Neutrófilossegmentados1TT>1700 && Neutrófilossegmentados1TT<7000){
         
         documento.add(NeutrófilosSV1);
         } 
@@ -4547,7 +4556,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSV2.setIndentationLeft(380);
         NeutrófilosSV2.setSpacingAfter(-3); 
    
-          if(Neutrófilossegmentados1TT>=10 && Neutrófilossegmentados1TT<1700){
+          if(Neutrófilossegmentados1TT>=10 && Neutrófilossegmentados1TT<=1700){
         
         documento.add(NeutrófilosSV2);
         } 
@@ -4557,7 +4566,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSV3.setIndentationLeft(380);
         NeutrófilosSV3.setSpacingAfter(-3); 
    
-          if(Neutrófilossegmentados1TT>7000){
+          if(Neutrófilossegmentados1TT>=7000){
         
         documento.add(NeutrófilosSV3);
         }   
@@ -4578,7 +4587,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSVref1.setIndentationLeft((float) 439);
         NeutrófilosSVref1.setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>=1700 && Neutrófilossegmentados1TT<=7000){
+          if(Neutrófilossegmentados1TT>1700 && Neutrófilossegmentados1TT<7000){
         
         documento.add(NeutrófilosSVref1);
         } 
@@ -4588,7 +4597,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSVref2.setIndentationLeft((float) 439);
         NeutrófilosSVref2.setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>=10 && Neutrófilossegmentados1TT<1700){
+          if(Neutrófilossegmentados1TT>=10 && Neutrófilossegmentados1TT<=1700){
         
         documento.add(NeutrófilosSVref2);
         } 
@@ -4598,7 +4607,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSVref3.setIndentationLeft((float) 439);
         NeutrófilosSVref3.setSpacingAfter(-3); 
    
-          if(Neutrófilossegmentados1TT>7000){
+          if(Neutrófilossegmentados1TT>=7000){
         
         documento.add(NeutrófilosSVref3);
         }   
@@ -4619,7 +4628,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSref21.setIndentationLeft((float) 508.5);
         NeutrófilosSref21.setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>=1700 && Neutrófilossegmentados1TT<=7000){
+          if(Neutrófilossegmentados1TT>1700 && Neutrófilossegmentados1TT<7000){
         
         documento.add(NeutrófilosSref21);
         } 
@@ -4629,7 +4638,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSref22.setIndentationLeft((float) 508.5);
         NeutrófilosSref22.setSpacingAfter(-3);
    
-          if(Neutrófilossegmentados1TT>=10 && Neutrófilossegmentados1TT<1700){
+          if(Neutrófilossegmentados1TT>=10 && Neutrófilossegmentados1TT<=1700){
         
         documento.add(NeutrófilosSref22);
         } 
@@ -4639,7 +4648,7 @@ String user = "", nom_paciente = "";
         NeutrófilosSref23.setIndentationLeft((float) 508.5);
         NeutrófilosSref23.setSpacingAfter(-3); 
    
-          if(Neutrófilossegmentados1TT>7000){
+          if(Neutrófilossegmentados1TT>=7000){
         
         documento.add(NeutrófilosSref23);
         }   
@@ -4649,7 +4658,7 @@ String user = "", nom_paciente = "";
         NeutrófilosB.setIndentationLeft(17);
         NeutrófilosB.setSpacingAfter(-3);
         
-                if(Neutrófilosenbanda1TT<=9){
+        if(Neutrófilosenbanda1TT>0 && Neutrófilosenbanda1TT<=9){
         
         documento.add(NeutrófilosB);
                  
@@ -4660,7 +4669,7 @@ String user = "", nom_paciente = "";
         NeutrófilosB1.setIndentationLeft(17);
         NeutrófilosB1.setSpacingAfter(-3);
    
-          if(Neutrófilosenbanda1TT>=10 && Neutrófilosenbanda1TT<=700){
+          if(Neutrófilosenbanda1TT>=10 && Neutrófilosenbanda1TT<700){
         
         documento.add(NeutrófilosB1);
         } 
@@ -4670,7 +4679,7 @@ String user = "", nom_paciente = "";
         NeutrófilosB2.setIndentationLeft(17);
         NeutrófilosB2.setSpacingAfter(-3);
    
-          if(Neutrófilosenbanda1TT>700){
+          if(Neutrófilosenbanda1TT==0 || Neutrófilosenbanda1TT>=700){
         
         documento.add(NeutrófilosB2);
         }  
@@ -4680,7 +4689,7 @@ String user = "", nom_paciente = "";
         NeutrófilosBR.setIndentationLeft((float) 327);
         NeutrófilosBR.setSpacingAfter(-3);
         
-        if(Neutrófilosenbanda1TT<=9 && Neutrófilosenbanda1TP<=9){
+        if(Neutrófilosenbanda1TT>0 && Neutrófilosenbanda1TP>0 && Neutrófilosenbanda1TT<=9 && Neutrófilosenbanda1TP<=9){
         
         documento.add(NeutrófilosBR);
                  
@@ -4691,7 +4700,7 @@ String user = "", nom_paciente = "";
         NeutrófilosBR1.setIndentationLeft((float) 327);
         NeutrófilosBR1.setSpacingAfter(-3);
    
-          if(Neutrófilosenbanda1TT>=10 && Neutrófilosenbanda1TT<=700 && Neutrófilosenbanda1TP<=9){
+          if(Neutrófilosenbanda1TT>=10 && Neutrófilosenbanda1TT<700 && Neutrófilosenbanda1TP<=9){
               
         documento.add(NeutrófilosBR1);
         
@@ -4702,7 +4711,7 @@ String user = "", nom_paciente = "";
         NeutrófilosBR2.setIndentationLeft((float) 327);
         NeutrófilosBR2.setSpacingAfter(-3);
    
-          if(Neutrófilosenbanda1TT>700 && Neutrófilosenbanda1TP<=9){
+          if(Neutrófilosenbanda1TT==0 && Neutrófilosenbanda1TP<=9 || Neutrófilosenbanda1TT>=700 && Neutrófilosenbanda1TP<=9){
         
         documento.add(NeutrófilosBR2);
         } 
@@ -4712,7 +4721,7 @@ String user = "", nom_paciente = "";
         NeutrófilosBRP.setIndentationLeft((float) 322);
         NeutrófilosBRP.setSpacingAfter(-3);
         
-        if(Neutrófilosenbanda1TT<=9 && Neutrófilosenbanda1TP>=10){
+        if(Neutrófilosenbanda1TT>0 && Neutrófilosenbanda1TT<=9 && Neutrófilosenbanda1TP>=10){
         
         documento.add(NeutrófilosBRP);
                  
@@ -4723,7 +4732,7 @@ String user = "", nom_paciente = "";
         NeutrófilosBR1P.setIndentationLeft((float) 322);
         NeutrófilosBR1P.setSpacingAfter(-3);
    
-          if(Neutrófilosenbanda1TT>=10 && Neutrófilosenbanda1TT<=700 && Neutrófilosenbanda1TP>=10){
+          if(Neutrófilosenbanda1TT>=10 && Neutrófilosenbanda1TT<700 && Neutrófilosenbanda1TP>=10){
               
         documento.add(NeutrófilosBR1P);
         
@@ -4734,17 +4743,28 @@ String user = "", nom_paciente = "";
         NeutrófilosBR2P.setIndentationLeft((float) 322);
         NeutrófilosBR2P.setSpacingAfter(-3);
    
-          if(Neutrófilosenbanda1TT>700 && Neutrófilosenbanda1TP>=10){
+          if(Neutrófilosenbanda1TT==0 && Neutrófilosenbanda1TP>=10 || Neutrófilosenbanda1TT>=700 && Neutrófilosenbanda1TP>=10){
         
         documento.add(NeutrófilosBR2P);
         } 
+
+        Paragraph NeutrófilosBVA = new  Paragraph (txt_Neutrófilosenbanda1.getText() + " " + "/uL", FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
+        NeutrófilosBVA.setSpacingBefore((float) -12);
+        NeutrófilosBVA.setIndentationLeft(386);
+        NeutrófilosBVA.setSpacingAfter(-3);
+   
+          if(Neutrófilosenbanda1TT==0){
+        
+        documento.add(NeutrófilosBVA);
+                 
+        }
           
         Paragraph NeutrófilosBV = new  Paragraph (txt_Neutrófilosenbanda1.getText() + " " + "/uL", FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         NeutrófilosBV.setSpacingBefore((float) -12);
         NeutrófilosBV.setIndentationLeft(386);
         NeutrófilosBV.setSpacingAfter(-3);
    
-          if(Neutrófilosenbanda1TT<=9){
+          if(Neutrófilosenbanda1TT>0 && Neutrófilosenbanda1TT<=9){
         
         documento.add(NeutrófilosBV);
                  
@@ -4755,7 +4775,7 @@ String user = "", nom_paciente = "";
         NeutrófilosBV1.setIndentationLeft(380);
         NeutrófilosBV1.setSpacingAfter(-3);
    
-          if(Neutrófilosenbanda1TT>=10 && Neutrófilosenbanda1TT<=700){
+          if(Neutrófilosenbanda1TT>=10 && Neutrófilosenbanda1TT<700){
         
         documento.add(NeutrófilosBV1);
         } 
@@ -4765,17 +4785,28 @@ String user = "", nom_paciente = "";
         NeutrófilosBV2.setIndentationLeft(380);
         NeutrófilosBV2.setSpacingAfter(-3);
    
-          if(Neutrófilosenbanda1TT>700){
+          if(Neutrófilosenbanda1TT>=700){
         
         documento.add(NeutrófilosBV2);
         }  
+
+        Paragraph NeutrófilosBrefA = new  Paragraph ("0" , FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
+        NeutrófilosBrefA.setSpacingBefore((float) -12);
+        NeutrófilosBrefA.setIndentationLeft((float) 456);
+        NeutrófilosBrefA.setSpacingAfter(-3);
+        
+        if(Neutrófilosenbanda1TT==0){
+        
+        documento.add(NeutrófilosBrefA);
+                 
+        } 
         
         Paragraph NeutrófilosBref = new  Paragraph ("0" , FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         NeutrófilosBref.setSpacingBefore((float) -12);
         NeutrófilosBref.setIndentationLeft((float) 456);
         NeutrófilosBref.setSpacingAfter(-3);
         
-                  if(Neutrófilosenbanda1TT<=9){
+        if(Neutrófilosenbanda1TT>0 && Neutrófilosenbanda1TT<=9){
         
         documento.add(NeutrófilosBref);
                  
@@ -4786,7 +4817,7 @@ String user = "", nom_paciente = "";
         NeutrófilosBref1.setIndentationLeft((float) 456);
         NeutrófilosBref1.setSpacingAfter(-3);
    
-          if(Neutrófilosenbanda1TT>=10 && Neutrófilosenbanda1TT<=700){
+          if(Neutrófilosenbanda1TT>=10 && Neutrófilosenbanda1TT<700){
         
         documento.add(NeutrófilosBref1);
         } 
@@ -4796,28 +4827,39 @@ String user = "", nom_paciente = "";
         NeutrófilosBref2.setIndentationLeft((float) 456);
         NeutrófilosBref2.setSpacingAfter(-3);
    
-          if(Neutrófilosenbanda1TT>700){
+          if(Neutrófilosenbanda1TT>=700){
         
         documento.add(NeutrófilosBref2);
         }
         
+        Paragraph NeutrófilosBref21A = new  Paragraph ("700" , FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
+        NeutrófilosBref21A.setSpacingBefore((float) -12);
+        NeutrófilosBref21A.setIndentationLeft((float) 514);
+        NeutrófilosBref21A.setSpacingAfter(-3);
+        
+        if(Neutrófilosenbanda1TT==0){
+        
+        documento.add(NeutrófilosBref21A);
+                 
+        }
+
         Paragraph NeutrófilosBref21 = new  Paragraph ("700" , FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         NeutrófilosBref21.setSpacingBefore((float) -12);
         NeutrófilosBref21.setIndentationLeft((float) 514);
         NeutrófilosBref21.setSpacingAfter(-3);
         
-        if(Neutrófilosenbanda1TT<=9){
+        if(Neutrófilosenbanda1TT>0 && Neutrófilosenbanda1TT<=9){
         
         documento.add(NeutrófilosBref21);
                  
         }
-             
+       
         Paragraph NeutrófilosBref212 = new  Paragraph ("700" , FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         NeutrófilosBref212.setSpacingBefore((float) -12);
         NeutrófilosBref212.setIndentationLeft((float) 514);
         NeutrófilosBref212.setSpacingAfter(-3);
    
-          if(Neutrófilosenbanda1TT>=10 && Neutrófilosenbanda1TT<=700){
+          if(Neutrófilosenbanda1TT>=10 && Neutrófilosenbanda1TT<700){
         
         documento.add(NeutrófilosBref212);
         } 
@@ -4827,7 +4869,7 @@ String user = "", nom_paciente = "";
         NeutrófilosBref23.setIndentationLeft((float) 514);
         NeutrófilosBref23.setSpacingAfter(-3);
 
-          if(Neutrófilosenbanda1TT>700){
+          if(Neutrófilosenbanda1TT>=700){
         
         documento.add(NeutrófilosBref23);
         }
@@ -4868,7 +4910,7 @@ String user = "", nom_paciente = "";
         MetamielocitosR.setIndentationLeft((float) 327);
         MetamielocitosR.setSpacingAfter(-3);
         
-                         if(Metamielocitos1TT==0 && Metamielocitos1TP<=9){
+        if(Metamielocitos1TT==0 && Metamielocitos1TP<=9){
         
         documento.add(MetamielocitosR);        
         }
@@ -4898,7 +4940,7 @@ String user = "", nom_paciente = "";
         MetamielocitosRP.setIndentationLeft((float) 322);
         MetamielocitosRP.setSpacingAfter(-3);
         
-                         if(Metamielocitos1TT==0 && Metamielocitos1TP>=10){
+        if(Metamielocitos1TT==0 && Metamielocitos1TP>=10){
         
         documento.add(MetamielocitosRP);        
         }
@@ -5449,7 +5491,7 @@ String user = "", nom_paciente = "";
         BlastosR3.setIndentationLeft((float) 322);
         BlastosR3.setSpacingAfter(-3);
         
-                               if(Blastos1TT==0 && Blastos1TP>=10){
+        if(Blastos1TT==0 && Blastos1TP>=10){
         
         documento.add(BlastosR3);
                  
@@ -5583,7 +5625,7 @@ String user = "", nom_paciente = "";
         Eosinófilos1.setIndentationLeft(17);
         Eosinófilos1.setSpacingAfter(-3);
    
-          if(Eosinófilos1TT>=10 && Eosinófilos1TT<=680){
+          if(Eosinófilos1TT>=10 && Eosinófilos1TT<680){
         
         documento.add(Eosinófilos1);
         } 
@@ -5593,7 +5635,7 @@ String user = "", nom_paciente = "";
         Eosinófilos2.setIndentationLeft(17);
         Eosinófilos2.setSpacingAfter(-3);
    
-          if(Eosinófilos1TT>680){
+          if(Eosinófilos1TT==0 || Eosinófilos1TT>=680){
         
         documento.add(Eosinófilos2);
         } 
@@ -5603,7 +5645,7 @@ String user = "", nom_paciente = "";
         EosinófilosR.setIndentationLeft((float) 327);
         EosinófilosR.setSpacingAfter(-3);
         
-        if(Eosinófilos1TT<=9 && Eosinófilos1TP<=9){
+        if(Eosinófilos1TT>0 && Eosinófilos1TP>0 && Eosinófilos1TT<=9 && Eosinófilos1TP<=9){
         
         documento.add(EosinófilosR);         
         }
@@ -5613,7 +5655,7 @@ String user = "", nom_paciente = "";
         EosinófilosR1.setIndentationLeft((float) 327);
         EosinófilosR1.setSpacingAfter(-3);
    
-          if(Eosinófilos1TT>=10 && Eosinófilos1TT<=680 && Eosinófilos1TP<=9){
+          if(Eosinófilos1TT>=10 && Eosinófilos1TT<680 && Eosinófilos1TP<=9){
         
         documento.add(EosinófilosR1);
         } 
@@ -5623,7 +5665,7 @@ String user = "", nom_paciente = "";
         EosinófilosR2.setIndentationLeft((float) 327);
         EosinófilosR2.setSpacingAfter(-3);
    
-          if(Eosinófilos1TT>680 && Eosinófilos1TP<=9){
+          if(Eosinófilos1TT==0 && Eosinófilos1TP<=9 || Eosinófilos1TT>=680 && Eosinófilos1TP<=9){
         
         documento.add(EosinófilosR2);
         }
@@ -5633,7 +5675,7 @@ String user = "", nom_paciente = "";
         EosinófilosRP1.setIndentationLeft((float) 322);
         EosinófilosRP1.setSpacingAfter(-3);
         
-        if(Eosinófilos1TT<=9 && Eosinófilos1TP>=10){
+        if(Eosinófilos1TT>0 && Eosinófilos1TT<=9 && Eosinófilos1TP>=10){
         
         documento.add(EosinófilosRP1);         
         }
@@ -5643,7 +5685,7 @@ String user = "", nom_paciente = "";
         EosinófilosRP2.setIndentationLeft((float) 322);
         EosinófilosRP2.setSpacingAfter(-3);
    
-          if(Eosinófilos1TT>=10 && Eosinófilos1TT<=680 && Eosinófilos1TP>=10){
+          if(Eosinófilos1TT>=10 && Eosinófilos1TT<680 && Eosinófilos1TP>=10){
         
         documento.add(EosinófilosRP2);
         } 
@@ -5653,17 +5695,27 @@ String user = "", nom_paciente = "";
         EosinófilosRP3.setIndentationLeft((float) 322);
         EosinófilosRP3.setSpacingAfter(-3);
    
-          if(Eosinófilos1TT>680 && Eosinófilos1TP>=10){
+          if(Eosinófilos1TT==0 && Eosinófilos1TP>=10 || Eosinófilos1TT>=680 && Eosinófilos1TP>=10){
         
         documento.add(EosinófilosRP3);
         }  
         
+        Paragraph EosinófilosVA = new  Paragraph (txt_Eosinófilos1.getText() + " " + "/uL", FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
+        EosinófilosVA.setSpacingBefore((float) -12);
+        EosinófilosVA.setIndentationLeft(386);
+        EosinófilosVA.setSpacingAfter(-3);
+        
+        if(Eosinófilos1TT==0){
+        
+        documento.add(EosinófilosVA);         
+        }
+
           Paragraph EosinófilosV = new  Paragraph (txt_Eosinófilos1.getText() + " " + "/uL", FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         EosinófilosV.setSpacingBefore((float) -12);
         EosinófilosV.setIndentationLeft(386);
         EosinófilosV.setSpacingAfter(-3);
         
-        if(Eosinófilos1TT<=9){
+        if(Eosinófilos1TT>0 && Eosinófilos1TT<=9){
         
         documento.add(EosinófilosV);         
         }
@@ -5683,17 +5735,27 @@ String user = "", nom_paciente = "";
         EosinófilosV12.setIndentationLeft(380);
         EosinófilosV12.setSpacingAfter(-3);
    
-          if(Eosinófilos1TT>680){
+          if(Eosinófilos1TT>=680){
         
         documento.add(EosinófilosV12);
         } 
+
+        Paragraph EosinófilosrefA = new  Paragraph ("0" , FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
+        EosinófilosrefA.setSpacingBefore((float) -12);
+        EosinófilosrefA.setIndentationLeft((float) 456);
+        EosinófilosrefA.setSpacingAfter(-3);
+          
+        if(Eosinófilos1TT==0){
         
-           Paragraph Eosinófilosref = new  Paragraph ("0" , FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
+        documento.add(EosinófilosrefA);         
+        }
+        
+        Paragraph Eosinófilosref = new  Paragraph ("0" , FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         Eosinófilosref.setSpacingBefore((float) -12);
         Eosinófilosref.setIndentationLeft((float) 456);
         Eosinófilosref.setSpacingAfter(-3);
           
-                          if(Eosinófilos1TT<=9){
+        if(Eosinófilos1TT>0 && Eosinófilos1TT<=9){
         
         documento.add(Eosinófilosref);         
         }
@@ -5703,7 +5765,7 @@ String user = "", nom_paciente = "";
         Eosinófilosref1.setIndentationLeft((float) 456);
         Eosinófilosref1.setSpacingAfter(-3);
    
-          if(Eosinófilos1TT>=10 && Eosinófilos1TT<=680){
+          if(Eosinófilos1TT>=10 && Eosinófilos1TT<680){
         
         documento.add(Eosinófilosref1);
         } 
@@ -5713,17 +5775,27 @@ String user = "", nom_paciente = "";
         Eosinófilosref2.setIndentationLeft((float) 456);
         Eosinófilosref2.setSpacingAfter(-3);
    
-          if(Eosinófilos1TT>680){
+          if(Eosinófilos1TT>=680){
         
         documento.add(Eosinófilosref2);
         } 
+
+        Paragraph EosinófilosrefP1A = new  Paragraph ("680" , FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
+        EosinófilosrefP1A.setSpacingBefore((float) -12);
+        EosinófilosrefP1A.setIndentationLeft((float) 514);
+        EosinófilosrefP1A.setSpacingAfter(-3);
+        
+        if(Eosinófilos1TT==0){
+        
+        documento.add(EosinófilosrefP1A);         
+        }
         
         Paragraph EosinófilosrefP1 = new  Paragraph ("680" , FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         EosinófilosrefP1.setSpacingBefore((float) -12);
         EosinófilosrefP1.setIndentationLeft((float) 514);
         EosinófilosrefP1.setSpacingAfter(-3);
         
-        if(Eosinófilos1TT<=9){
+        if(Eosinófilos1TT>0 && Eosinófilos1TT<=9){
         
         documento.add(EosinófilosrefP1);         
         }
@@ -5733,7 +5805,7 @@ String user = "", nom_paciente = "";
         EosinófilosrefP2.setIndentationLeft((float) 514);
         EosinófilosrefP2.setSpacingAfter(-3);
    
-          if(Eosinófilos1TT>=10 && Eosinófilos1TT<=680){
+          if(Eosinófilos1TT>=10 && Eosinófilos1TT<680){
         
         documento.add(EosinófilosrefP2);
         } 
@@ -5743,7 +5815,7 @@ String user = "", nom_paciente = "";
         EosinófilosrefP3.setIndentationLeft((float) 514);
         EosinófilosrefP3.setSpacingAfter(-3);
    
-          if(Eosinófilos1TT>680){
+          if(Eosinófilos1TT>=680){
         
         documento.add(EosinófilosrefP3);
         } 
@@ -5753,7 +5825,7 @@ String user = "", nom_paciente = "";
         Basófilos.setIndentationLeft(17);
         Basófilos.setSpacingAfter(-3);
         
-        if(Basófilos1TT<=9){
+        if(Basófilos1TT>0 && Basófilos1TT<=9){
         
         documento.add(Basófilos);        
         }
@@ -5763,7 +5835,7 @@ String user = "", nom_paciente = "";
         Basófilos1.setIndentationLeft(17);
         Basófilos1.setSpacingAfter(-3);
    
-          if(Basófilos1TT>=10 && Basófilos1TT<=100){
+          if(Basófilos1TT>=10 && Basófilos1TT<100){
         
         documento.add(Basófilos1);
         } 
@@ -5773,7 +5845,7 @@ String user = "", nom_paciente = "";
         Basófilos2.setIndentationLeft(17);
         Basófilos2.setSpacingAfter(-3);
    
-          if(Basófilos1TT>100){
+          if(Basófilos1TT==0 || Basófilos1TT>=100){
         
         documento.add(Basófilos2);
         }
@@ -5783,7 +5855,7 @@ String user = "", nom_paciente = "";
         BasófilosR.setIndentationLeft((float) 327);
         BasófilosR.setSpacingAfter(-3);
         
-        if(Basófilos1TT<=9 && Basófilos1TP<=9){
+        if(Basófilos1TT>0 && Basófilos1TP>0 && Basófilos1TT<=9 && Basófilos1TP<=9){
         
         documento.add(BasófilosR);        
         }
@@ -5793,7 +5865,7 @@ String user = "", nom_paciente = "";
         BasófilosR1.setIndentationLeft((float) 327);
         BasófilosR1.setSpacingAfter(-3);
    
-        if(Basófilos1TT>=10 && Basófilos1TT<=100 && Basófilos1TP<=9){
+        if(Basófilos1TT>=10 && Basófilos1TT<100 && Basófilos1TP<=9){
         
         documento.add(BasófilosR1);
         } 
@@ -5803,7 +5875,7 @@ String user = "", nom_paciente = "";
         BasófilosR2.setIndentationLeft((float) 327);
         BasófilosR2.setSpacingAfter(-3);
    
-        if(Basófilos1TT>100 && Basófilos1TP<=9){
+        if(Basófilos1TT==0 && Basófilos1TP<=9 || Basófilos1TT>=100 && Basófilos1TP<=9){
         
         documento.add(BasófilosR2);
         }
@@ -5813,7 +5885,7 @@ String user = "", nom_paciente = "";
         BasófilosRP1.setIndentationLeft((float) 322);
         BasófilosRP1.setSpacingAfter(-3);
         
-        if(Basófilos1TT<=9 && Basófilos1TP>=10){
+        if(Basófilos1TT>0 && Basófilos1TT<=9 && Basófilos1TP>=10){
         
         documento.add(BasófilosRP1);        
         }
@@ -5823,7 +5895,7 @@ String user = "", nom_paciente = "";
         BasófilosRP2.setIndentationLeft((float) 322);
         BasófilosRP2.setSpacingAfter(-3);
    
-          if(Basófilos1TT>=10 && Basófilos1TT<=100 && Basófilos1TP>=10){
+          if(Basófilos1TT>=10 && Basófilos1TT<100 && Basófilos1TP>=10){
         
         documento.add(BasófilosRP2);
         } 
@@ -5833,17 +5905,27 @@ String user = "", nom_paciente = "";
         BasófilosRP3.setIndentationLeft((float) 322);
         BasófilosRP3.setSpacingAfter(-3);
    
-          if(Basófilos1TT>100 && Basófilos1TP>=10){
+          if(Basófilos1TT==0 && Basófilos1TP>=10 || Basófilos1TT>=100 && Basófilos1TP>=10){
         
         documento.add(BasófilosRP3);
         }  
+
+        Paragraph BasófilosVA = new  Paragraph (txt_Basófilos1.getText() + " " + "/uL", FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
+        BasófilosVA.setSpacingBefore((float) -12);
+        BasófilosVA.setIndentationLeft(386);
+        BasófilosVA.setSpacingAfter(-3);
+       
+        if(Basófilos1TT==0){
+        
+        documento.add(BasófilosVA);        
+        }
         
         Paragraph BasófilosV = new  Paragraph (txt_Basófilos1.getText() + " " + "/uL", FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         BasófilosV.setSpacingBefore((float) -12);
         BasófilosV.setIndentationLeft(386);
         BasófilosV.setSpacingAfter(-3);
        
-        if(Basófilos1TT<=9){
+        if(Basófilos1TT>0 && Basófilos1TT<=9){
         
         documento.add(BasófilosV);        
         }
@@ -5853,7 +5935,7 @@ String user = "", nom_paciente = "";
         BasófilosV1.setIndentationLeft(380);
         BasófilosV1.setSpacingAfter(-3);
    
-          if(Basófilos1TT>=10 && Basófilos1TT<=100){
+          if(Basófilos1TT>=10 && Basófilos1TT<100){
         
         documento.add(BasófilosV1);
         } 
@@ -5863,17 +5945,27 @@ String user = "", nom_paciente = "";
         BasófilosV12.setIndentationLeft(380);
         BasófilosV12.setSpacingAfter(-3);
    
-          if(Basófilos1TT>100){
+          if(Basófilos1TT>=100){
         
         documento.add(BasófilosV12);
         } 
         
+        Paragraph BasófilosrefA = new  Paragraph ("0" , FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
+        BasófilosrefA.setSpacingBefore((float) -12);
+        BasófilosrefA.setIndentationLeft((float) 456);
+        BasófilosrefA.setSpacingAfter(-3);
+        
+        if(Basófilos1TT==0){
+        
+        documento.add(BasófilosrefA);        
+        }
+
         Paragraph Basófilosref = new  Paragraph ("0" , FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         Basófilosref.setSpacingBefore((float) -12);
         Basófilosref.setIndentationLeft((float) 456);
         Basófilosref.setSpacingAfter(-3);
         
-               if(Basófilos1TT<=9){
+        if(Basófilos1TT>0 && Basófilos1TT<=9){
         
         documento.add(Basófilosref);        
         }
@@ -5883,7 +5975,7 @@ String user = "", nom_paciente = "";
         Basófilosref1.setIndentationLeft((float) 456);
         Basófilosref1.setSpacingAfter(-3);
    
-          if(Basófilos1TT>=10 && Basófilos1TT<=100){
+          if(Basófilos1TT>=10 && Basófilos1TT<100){
         
         documento.add(Basófilosref1);
         } 
@@ -5893,17 +5985,27 @@ String user = "", nom_paciente = "";
         Basófilosref2.setIndentationLeft((float) 456);
         Basófilosref2.setSpacingAfter(-3);
    
-          if(Basófilos1TT>100){
+          if(Basófilos1TT>=100){
         
         documento.add(Basófilosref2);
         } 
+
+        Paragraph BasófilosrefC2A = new  Paragraph ("100" , FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
+        BasófilosrefC2A.setSpacingBefore((float) -12);
+        BasófilosrefC2A.setIndentationLeft((float) 514);
+        BasófilosrefC2A.setSpacingAfter(-3);
+        
+        if(Basófilos1TT==0){
+        
+        documento.add(BasófilosrefC2A);        
+        }
         
         Paragraph BasófilosrefC2 = new  Paragraph ("100" , FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         BasófilosrefC2.setSpacingBefore((float) -12);
         BasófilosrefC2.setIndentationLeft((float) 514);
         BasófilosrefC2.setSpacingAfter(-3);
         
-                       if(Basófilos1TT<=9){
+        if(Basófilos1TT>0 && Basófilos1TT<=9){
         
         documento.add(BasófilosrefC2);        
         }
@@ -5913,7 +6015,7 @@ String user = "", nom_paciente = "";
         BasófilosrefC3.setIndentationLeft((float) 514);
         BasófilosrefC3.setSpacingAfter(-3);
    
-          if(Basófilos1TT>=10 && Basófilos1TT<=100){
+          if(Basófilos1TT>=10 && Basófilos1TT<100){
         
         documento.add(BasófilosrefC3);
         } 
@@ -5923,7 +6025,7 @@ String user = "", nom_paciente = "";
         BasófilosrefC4.setIndentationLeft((float) 514);
         BasófilosrefC4.setSpacingAfter(-3);
    
-          if(Basófilos1TT>100){
+          if(Basófilos1TT>=100){
         
         documento.add(BasófilosrefC4);
         } 
@@ -5933,7 +6035,7 @@ String user = "", nom_paciente = "";
         Monocitos.setIndentationLeft(17);
         Monocitos.setSpacingAfter(-3);
         
-        if(Monocitos1TT<=9){
+        if(Monocitos1TT>0 && Monocitos1TT<=9){
         
         documento.add(Monocitos);         
         }
@@ -5943,7 +6045,7 @@ String user = "", nom_paciente = "";
         Monocitos1.setIndentationLeft(17);
         Monocitos1.setSpacingAfter(-3);
    
-          if(Monocitos1TT>=10 && Monocitos1TT<=1000){
+          if(Monocitos1TT>=10 && Monocitos1TT<1000){
         
         documento.add(Monocitos1);
         } 
@@ -5953,7 +6055,7 @@ String user = "", nom_paciente = "";
         Monocitos2.setIndentationLeft(17);
         Monocitos2.setSpacingAfter(-3);
    
-          if(Monocitos1TT>1000){
+          if(Monocitos1TT==0 || Monocitos1TT>=1000){
         
         documento.add(Monocitos2);
         } 
@@ -5963,7 +6065,7 @@ String user = "", nom_paciente = "";
         MonocitosR.setIndentationLeft((float) 327);
         MonocitosR.setSpacingAfter(-3);
         
-        if(Monocitos1TT<=9 && Monocitos1TP<=9){
+        if(Monocitos1TT>0 && Monocitos1TP>0 && Monocitos1TT<=9 && Monocitos1TP<=9){
         
         documento.add(MonocitosR);
                  
@@ -5974,7 +6076,7 @@ String user = "", nom_paciente = "";
         MonocitosR1.setIndentationLeft((float) 327);
         MonocitosR1.setSpacingAfter(-3);
    
-          if(Monocitos1TT>=10 && Monocitos1TT<=1000 && Monocitos1TP<=9){
+          if(Monocitos1TT>=10 && Monocitos1TT<1000 && Monocitos1TP<=9){
         
         documento.add(MonocitosR1);
         } 
@@ -5984,7 +6086,7 @@ String user = "", nom_paciente = "";
         MonocitosR2.setIndentationLeft((float) 327);
         MonocitosR2.setSpacingAfter(-3);
    
-          if(Monocitos1TT>1000 && Monocitos1TP<=9){
+          if(Monocitos1TT==0 && Monocitos1TP<=9 || Monocitos1TT>=1000 && Monocitos1TP<=9){
         
         documento.add(MonocitosR2);
         }
@@ -5994,7 +6096,7 @@ String user = "", nom_paciente = "";
         MonocitosRP.setIndentationLeft((float) 322);
         MonocitosRP.setSpacingAfter(-3);
         
-        if(Monocitos1TT<=9 && Monocitos1TP>=10){
+        if(Monocitos1TT>0 && Monocitos1TP>0 && Monocitos1TT<=9 && Monocitos1TP>=10){
         
         documento.add(MonocitosRP);
                  
@@ -6005,7 +6107,7 @@ String user = "", nom_paciente = "";
         MonocitosRP1.setIndentationLeft((float) 322);
         MonocitosRP1.setSpacingAfter(-3);
    
-          if(Monocitos1TT>=10 && Monocitos1TT<=1000 && Monocitos1TP>=10){
+          if(Monocitos1TT>=10 && Monocitos1TT<1000 && Monocitos1TP>=10){
         
         documento.add(MonocitosRP1);
         } 
@@ -6015,17 +6117,28 @@ String user = "", nom_paciente = "";
         MonocitosRP2.setIndentationLeft((float) 322);
         MonocitosRP2.setSpacingAfter(-3);
    
-          if(Monocitos1TT>1000 && Monocitos1TP>=10){
+          if(Monocitos1TT==0 && Monocitos1TP>=10 || Monocitos1TT>=1000 && Monocitos1TP>=10){
         
         documento.add(MonocitosRP2);
         }   
+
+        Paragraph MonocitosVA = new  Paragraph (txt_Monocitos1.getText() + " " + "/uL", FontFactory.getFont("arial", 10, Font.BOLD, BaseColor.BLACK));
+        MonocitosVA.setSpacingBefore((float) -12);
+        MonocitosVA.setIndentationLeft(386);
+        MonocitosVA.setSpacingAfter(-3);
+        
+        if(Monocitos1TT==0){
+        
+        documento.add(MonocitosVA);
+                 
+        }
         
         Paragraph MonocitosV = new  Paragraph (txt_Monocitos1.getText() + " " + "/uL", FontFactory.getFont("arial", 10, Font.NORMAL, BaseColor.BLACK));
         MonocitosV.setSpacingBefore((float) -12);
         MonocitosV.setIndentationLeft(386);
         MonocitosV.setSpacingAfter(-3);
         
-        if(Monocitos1TT<=9){
+        if(Monocitos1TT>0 && Monocitos1TT<=9){
         
         documento.add(MonocitosV);
                  
@@ -6036,7 +6149,7 @@ String user = "", nom_paciente = "";
         MonocitosV1.setIndentationLeft(380);
         MonocitosV1.setSpacingAfter(-3);
    
-          if(Monocitos1TT>=10 && Monocitos1TT<=1000){
+          if(Monocitos1TT>=10 && Monocitos1TT<1000){
         
         documento.add(MonocitosV1);
         } 
@@ -6046,7 +6159,7 @@ String user = "", nom_paciente = "";
         MonocitosV12.setIndentationLeft(380);
         MonocitosV12.setSpacingAfter(-3);
    
-          if(Monocitos1TT>1000){
+          if(Monocitos1TT>=1000){
         
         documento.add(MonocitosV12);
         } 
@@ -6066,7 +6179,7 @@ String user = "", nom_paciente = "";
         Monocitosref1.setIndentationLeft((float) 456);
         Monocitosref1.setSpacingAfter(-3);
    
-          if(Monocitos1TT>=10 && Monocitos1TT<=1000){
+          if(Monocitos1TT>=10 && Monocitos1TT<1000){
         
         documento.add(Monocitosref1);
         } 
@@ -6076,7 +6189,7 @@ String user = "", nom_paciente = "";
         Monocitosref2.setIndentationLeft((float) 456);
         Monocitosref2.setSpacingAfter(-3);
    
-          if(Monocitos1TT>1000){
+          if(Monocitos1TT==0 || Monocitos1TT>=1000){
         
         documento.add(Monocitosref2);
         } 
@@ -6086,7 +6199,7 @@ String user = "", nom_paciente = "";
         MonocitosrefP2.setIndentationLeft((float) 508.5);
         MonocitosrefP2.setSpacingAfter(-3);
         
-                if(Monocitos1TT<=9){
+        if(Monocitos1TT>0 && Monocitos1TT<=9){
         
         documento.add(MonocitosrefP2);        
         }
@@ -6096,7 +6209,7 @@ String user = "", nom_paciente = "";
         MonocitosrefP3.setIndentationLeft((float) 508.5);
         MonocitosrefP3.setSpacingAfter(-3);
    
-          if(Monocitos1TT>=10 && Monocitos1TT<=1000){
+        if(Monocitos1TT>=10 && Monocitos1TT<1000){
         
         documento.add(MonocitosrefP3);
         } 
@@ -6106,7 +6219,7 @@ String user = "", nom_paciente = "";
         MonocitosrefP4.setIndentationLeft((float) 508.5);
         MonocitosrefP4.setSpacingAfter(-3);
    
-          if(Monocitos1TT>1000){
+          if(Monocitos1TT==0 || Monocitos1TT>=1000){
         
         documento.add(MonocitosrefP4);
         } 
@@ -6126,7 +6239,7 @@ String user = "", nom_paciente = "";
         Linfocitos1.setIndentationLeft(17);
         Linfocitos1.setSpacingAfter(-3);
    
-        if(Linfocitos1TT>=1500 && Linfocitos1TT<=6500){
+        if(Linfocitos1TT>1500 && Linfocitos1TT<6500){
         
         documento.add(Linfocitos1);
         } 
@@ -6136,7 +6249,7 @@ String user = "", nom_paciente = "";
         Linfocitos2.setIndentationLeft(17);
         Linfocitos2.setSpacingAfter(-3);
    
-        if(Linfocitos1TT>=10 && Linfocitos1TT<1500){
+        if(Linfocitos1TT>=10 && Linfocitos1TT<=1500){
         
         documento.add(Linfocitos2);
         } 
@@ -6146,7 +6259,7 @@ String user = "", nom_paciente = "";
         Linfocitos3.setIndentationLeft(17);
         Linfocitos3.setSpacingAfter(-3);
    
-        if(Linfocitos1TT>6500){
+        if(Linfocitos1TT>=6500){
         
         documento.add(Linfocitos3);
         }   
@@ -6166,7 +6279,7 @@ String user = "", nom_paciente = "";
         LinfocitosR1.setIndentationLeft((float) 327);
         LinfocitosR1.setSpacingAfter(-3);
    
-        if(Linfocitos1TT>=1500 && Linfocitos1TT<=6500 && Linfocitos1TP<=9){
+        if(Linfocitos1TT>1500 && Linfocitos1TT<6500 && Linfocitos1TP<=9){
         
         documento.add(LinfocitosR1);
         } 
@@ -6176,7 +6289,7 @@ String user = "", nom_paciente = "";
         LinfocitosR2.setIndentationLeft((float) 327);
         LinfocitosR2.setSpacingAfter(-3);
    
-        if(Linfocitos1TT>=10 && Linfocitos1TT<1500 && Linfocitos1TP<=9){
+        if(Linfocitos1TT>=10 && Linfocitos1TT<=1500 && Linfocitos1TP<=9){
         
         documento.add(LinfocitosR2);
         } 
@@ -6186,7 +6299,7 @@ String user = "", nom_paciente = "";
         LinfocitosR3.setIndentationLeft((float) 327);
         LinfocitosR3.setSpacingAfter(-3);
    
-        if(Linfocitos1TT>6500 && Linfocitos1TP<=9){
+        if(Linfocitos1TT>=6500 && Linfocitos1TP<=9){
         
         documento.add(LinfocitosR3);
         }
@@ -6206,7 +6319,7 @@ String user = "", nom_paciente = "";
         LinfocitosRP1.setIndentationLeft((float) 322);
         LinfocitosRP1.setSpacingAfter(-3);
    
-        if(Linfocitos1TT>=1500 && Linfocitos1TT<=6500 && Linfocitos1TP>=10){
+        if(Linfocitos1TT>1500 && Linfocitos1TT<6500 && Linfocitos1TP>=10){
         
         documento.add(LinfocitosRP1);
         } 
@@ -6216,7 +6329,7 @@ String user = "", nom_paciente = "";
         LinfocitosRP2.setIndentationLeft((float) 322);
         LinfocitosRP2.setSpacingAfter(-3);
    
-        if(Linfocitos1TT>=10 && Linfocitos1TT<1500 && Linfocitos1TP>=10){
+        if(Linfocitos1TT>=10 && Linfocitos1TT<=1500 && Linfocitos1TP>=10){
         
         documento.add(LinfocitosRP2);
         } 
@@ -6226,7 +6339,7 @@ String user = "", nom_paciente = "";
         LinfocitosRP3.setIndentationLeft((float) 322);
         LinfocitosRP3.setSpacingAfter(-3);
    
-        if(Linfocitos1TT>6500 && Linfocitos1TP>=10){
+        if(Linfocitos1TT>=6500 && Linfocitos1TP>=10){
         
         documento.add(LinfocitosRP3);
         }
@@ -6247,7 +6360,7 @@ String user = "", nom_paciente = "";
         LinfocitosV1.setIndentationLeft(380);
         LinfocitosV1.setSpacingAfter(-3);
    
-          if(Linfocitos1TT>=1500 && Linfocitos1TT<=6500){
+          if(Linfocitos1TT>1500 && Linfocitos1TT<6500){
         
         documento.add(LinfocitosV1);
         } 
@@ -6258,7 +6371,7 @@ String user = "", nom_paciente = "";
         LinfocitosV12.setIndentationLeft(380);
         LinfocitosV12.setSpacingAfter(-3);
    
-          if(Linfocitos1TT>=10 && Linfocitos1TT<1500){
+          if(Linfocitos1TT>=10 && Linfocitos1TT<=1500){
         
         documento.add(LinfocitosV12);
         } 
@@ -6268,7 +6381,7 @@ String user = "", nom_paciente = "";
         LinfocitosV123.setIndentationLeft(380);
         LinfocitosV123.setSpacingAfter(-3);
    
-          if(Linfocitos1TT>6500){
+          if(Linfocitos1TT>=6500){
         
         documento.add(LinfocitosV123);
         }   
@@ -6288,7 +6401,7 @@ String user = "", nom_paciente = "";
         Linfocitosref1.setIndentationLeft((float) 439);
         Linfocitosref1.setSpacingAfter(-3);
    
-          if(Linfocitos1TT>=1500 && Linfocitos1TT<=6500){
+          if(Linfocitos1TT>1500 && Linfocitos1TT<6500){
         
         documento.add(Linfocitosref1);
         } 
@@ -6298,7 +6411,7 @@ String user = "", nom_paciente = "";
         Linfocitosref2.setIndentationLeft((float) 439);
         Linfocitosref2.setSpacingAfter(-3);
    
-          if(Linfocitos1TT>=10 && Linfocitos1TT<1500){
+          if(Linfocitos1TT>=10 && Linfocitos1TT<=1500){
         
         documento.add(Linfocitosref2);
         } 
@@ -6308,7 +6421,7 @@ String user = "", nom_paciente = "";
         Linfocitosref3.setIndentationLeft((float) 439);
         Linfocitosref3.setSpacingAfter(-3);
    
-          if(Linfocitos1TT>6500){
+          if(Linfocitos1TT>=6500){
         
         documento.add(Linfocitosref3);
         }
@@ -6328,7 +6441,7 @@ String user = "", nom_paciente = "";
         LinfocitosrefP3.setIndentationLeft((float) 508.5);
         LinfocitosrefP3.setSpacingAfter(-3);
    
-          if(Linfocitos1TT>=1500 && Linfocitos1TT<=6500){
+          if(Linfocitos1TT>1500 && Linfocitos1TT<6500){
         
         documento.add(LinfocitosrefP3);
         } 
@@ -6338,7 +6451,7 @@ String user = "", nom_paciente = "";
         LinfocitosrefP4.setIndentationLeft((float) 508.5);
         LinfocitosrefP4.setSpacingAfter(-3);
    
-          if(Linfocitos1TT>=10 && Linfocitos1TT<1500){
+          if(Linfocitos1TT>=10 && Linfocitos1TT<=1500){
         
         documento.add(LinfocitosrefP4);
         } 
@@ -6348,7 +6461,7 @@ String user = "", nom_paciente = "";
         LinfocitosrefP5.setIndentationLeft((float) 508.5);
         LinfocitosrefP5.setSpacingAfter(-3);
    
-          if(Linfocitos1TT>6500){
+          if(Linfocitos1TT>=6500){
         
         documento.add(LinfocitosrefP5);
         }
